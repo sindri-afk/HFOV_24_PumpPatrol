@@ -1,6 +1,7 @@
 from models import LongTerm, ShortTerm, PayAsYouGo
 from membership_plan_logo import Logo
 import sys
+import os
 
 class MembershipRoutes:
     def __init__(self):
@@ -23,18 +24,22 @@ class MembershipRoutes:
             choice = input("Enter your choice: ")
             # return choice
             if choice == "1":
+                os.system('clear')
                 print("\nYou have chosen one month membership plan with payment of $"+str(self.short_term.one_month()))
                 self.id = "ST - 1"
                 is_true = False
             elif choice == "2":
+                os.system('clear')
                 print("\nYou have chosen three month membership plan with payment of $"+str(self.short_term.three_month()))
                 self.id = "ST - 2"
                 is_true = False
             elif choice == "3":
+                os.system('clear')
                 print("\nYou have chosen six month membership plan with payment of $"+str(self.short_term.six_month()))
                 self.id = "ST - 3"
                 is_true = False
             elif choice == "4":
+                os.system('clear')
                 print("Exiting...")
                 sys.exit()
             else:
@@ -56,18 +61,22 @@ class MembershipRoutes:
             choice = input("Enter your choice: ")
             # return choice
             if choice == "1":
+                os.system('clear')
                 print("\nYou have chosen one year membership plan with payment of $"+str(self.long_term.one_year()))
                 self.id = "LT - 1"
                 is_true = False
             elif choice == "2":
+                os.system('clear')
                 print("\nYou have chosen two year membership plan with payment of $"+str(self.long_term.two_year()))
                 self.id = "LT - 2"
                 is_true = False
             elif choice == "3":
+                os.system('clear')
                 print("\nYou have chosen three year membership plan with payment of $"+str(self.long_term.three_year()))
                 self.id = "LT - 3"
                 is_true = False
             elif choice == "4":
+                os.system('clear')
                 print("Exiting...")
                 sys.exit()
             else:
@@ -87,14 +96,17 @@ class MembershipRoutes:
             choice = input("Enter your choice: ")
             # return choice
             if choice == "1":
+                os.system('clear')
                 print("\nYou have chosen pay as you go to gym with payment of $"+str(self.pay_as_you_go.pay_as_you_go_gym()))
                 self.id = "PAYG - 1"
                 is_true = False
             elif choice == "2":
+                os.system('clear')
                 print("\nYou have chosen pay as you go to class with payment of $"+str(self.pay_as_you_go.pay_as_you_go_class()))
                 self.id = "PAYG - 2" 
                 is_true = False
             elif choice == "3":
+                os.system('clear')
                 print("Exiting...")
                 sys.exit()
             else: 
