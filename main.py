@@ -1,9 +1,11 @@
 import time
 from SignInUp.controllers.auth_controller import AuthController
+
 from display import display_menu
 
 user = None
 auth_controller = AuthController()
+
 
 def sign_up():
     auth_controller.sign_up()  # Handled by AuthController
@@ -36,6 +38,7 @@ def main():
             2: ("Exit", None),
         }
         display_menu("City Gym Hub", menu_options)
+
 
 if __name__ == "__main__":
     main()
