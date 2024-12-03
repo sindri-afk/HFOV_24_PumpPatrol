@@ -1,14 +1,62 @@
 [
     {
         "plan_id": 1,
-        "name": "Basic Plan",
+        "name": "Short-Term Plan",
         "price": 20.0,
         "duration": "1 month"
     },
     {
         "plan_id": 2,
-        "name": "Premium Plan",
+        "name": "Short-Term Plan",
         "price": 50.0,
         "duration": "3 months"
+    },
+    {
+        "plan_id": 3,
+        "name": "Short-Term Plan",
+        "price": 90.0,
+        "duration": "6 month"
+    },
+    {
+        "plan_id": 4,
+        "name": "Long-Term Plan",
+        "price": 150.0,
+        "duration": "1 year"
+    },
+    {
+        "plan_id": 5,
+        "name": "Long-Term Plan",
+        "price": 250.0,
+        "duration": "2 years"
+    },
+    {
+        "plan_id": 6,
+        "name": "Long-Term Plan",
+        "price": 350.0,
+        "duration": "3 years"
+    },
+    {
+        "plan_id": 7,
+        "name": "Long-Term Plan",
+        "price": 500.0,
+        "duration": "5 years"
+    },
+    {
+        "plan_id": 8,
+        "name": "Pay-As-You-Go Plan",
+        "price": 5.0,
+        "duration": "1 time"
+    },
+    {
+        "plan_id": 9,
+        "name": "Pay-As-You-Go Plan",
+        "price": 10.0,
+        "duration": "5 times"
+    },
+    {
+        "plan_id": 10,
+        "name": "Pay-As-You-Go Plan",
+        "price": 15.0,
+        "duration": "10 times"
     }
 ]
