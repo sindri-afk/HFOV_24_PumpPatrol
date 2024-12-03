@@ -10,12 +10,15 @@ membership_service = MembershipService()
 
 def view_memberships():
     memberships = membership_service.view_memberships()  # Handled by MembershipService
-    menu_options = {i: (f"{m.name} - ${m.price} for {m.duration}", buy_membership) for i, m in enumerate(memberships, 1)}
-    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu("City Gym Hub", user_main_menu)) # adding a go back option
+    menu_options = {
+        i: (f"{m.name} - ${m.price} for {m.duration}", lambda m_id=m.plan_id: buy_membership(m_id))
+        for i, m in enumerate(memberships, 1)
+    }
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu("City Gym Hub", user_main_menu))
     display_menu("Memberships", menu_options)
 
-def buy_membership():
-    membership_service.buy_membership(1)  # Handled by MembershipService
+def buy_membership(plan_id):
+    membership_service.buy_membership(plan_id)  # Handled by MembershipService
     time.sleep(1)
     display_menu("City Gym Hub", user_main_menu)
 

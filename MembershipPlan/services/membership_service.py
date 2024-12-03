@@ -9,8 +9,6 @@ class MembershipService:
 
     def buy_membership(self, plan_id):
         membership = self.repository.get_membership_by_id(plan_id)
-        if not membership:
-            print(f"Membership with ID {plan_id} not found.")
         print(f"You have successfully purchased the {membership.name}!")
 
     
