@@ -11,7 +11,6 @@ class AuthController:
         password = input("Enter password: ")
         try:
             user = self.auth_service.sign_up(username, password)
-            print(f"User {user.username} signed up successfully!")
         except ValueError as e:
             print(e)
 
