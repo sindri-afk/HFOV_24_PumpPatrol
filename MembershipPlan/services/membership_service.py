@@ -12,3 +12,6 @@ class MembershipService:
         if not membership:
             print(f"Membership with ID {plan_id} not found.")
         print(f"You have successfully purchased the {membership.name}!")
+
+    
+        

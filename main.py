@@ -52,7 +52,7 @@ def main():
 
     # User main menu
     if user:
-        display_menu("City Gym Hub", user_main_menu)
+        display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
 
 if __name__ == "__main__":
     main()
