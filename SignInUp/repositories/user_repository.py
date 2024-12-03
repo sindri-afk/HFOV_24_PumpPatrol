@@ -1,6 +1,5 @@
-# repositories/user_repository.py
 import json
-from models.user import User
+from SignInUp.models.user import User
 
 class UserRepository:
     def __init__(self, db_path="SignInUp/data/users.json"):
@@ -9,8 +8,7 @@ class UserRepository:
     def load_users(self):
         try:
             with open(self.db_path, 'r') as file:
-                data = json.load(file)
-                return [User(**user) for user in data]
+                return [User(**user) for user in json.load(file)]
         except FileNotFoundError:
             return []
 
