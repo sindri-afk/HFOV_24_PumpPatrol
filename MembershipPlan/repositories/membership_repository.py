@@ -12,7 +12,6 @@ class MembershipRepository:
 
     def get_membership_by_id(self, plan_id):
         memberships = self.get_all_memberships()
-        print(memberships[1].name)
         for membership in memberships:
             if membership.plan_id == plan_id:
                 return membership
