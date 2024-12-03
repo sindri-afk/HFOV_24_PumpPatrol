@@ -19,7 +19,7 @@ def view_memberships():
 
 def buy_membership(plan_id):
     membership_service.buy_membership(plan_id)  # Handled by MembershipService
-    time.sleep(1)
+    time.sleep(2)
     display_menu("City Gym Hub", user_main_menu)
 
 def sign_up():
