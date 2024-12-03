@@ -31,11 +31,15 @@ class LongTerm:
         self.payment = 2700
         return self.payment
 
-
 class PayAsYouGo:
+    def __init__(self):
+        self.payment = int
+        
     def pay_as_you_go_gym(self):
-        return "$15 per entry"
+        self.payment = 15
+        return self.payment
     def pay_as_you_go_class(self):
-        return "$40 per class"
+        self.payment = 40
+        return self.payment
 
 
