@@ -23,6 +23,7 @@ def sign_in():
         main()
 
 def main():
+    
     # Registering user
     menu_options = {
         1: ("Sign Up", sign_up),
