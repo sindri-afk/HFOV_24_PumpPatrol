@@ -20,9 +20,8 @@ def sign_in():
         time.sleep(1)
         main()
 
-
 def main():
-    # registering user
+    # Registering user
     menu_options = {
         1: ("Sign Up", sign_up),
         2: ("Sign In", sign_in),
@@ -30,15 +29,13 @@ def main():
     }
     display_menu("City Gym Hub", menu_options)
 
-    # user main menu
+    # User main menu
     if user:
         menu_options = {
             1: ("View Memberships", None),
             2: ("Exit", None),
         }
         display_menu("City Gym Hub", menu_options)
-
-    
 
 if __name__ == "__main__":
     main()
