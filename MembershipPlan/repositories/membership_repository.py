@@ -2,7 +2,7 @@ import json
 from ..models.membership import Membership
 
 class MembershipRepository:
-    def __init__(self, file_path="data/membership.json"):
+    def __init__(self, file_path="MembershipPlan/data/membership.json"):
         self.file_path = file_path
 
     def get_all_memberships(self):
