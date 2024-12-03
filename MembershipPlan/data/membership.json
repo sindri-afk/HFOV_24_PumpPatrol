@@ -1,0 +1,14 @@
+[
+    {
+        "plan_id": 1,
+        "name": "Basic Plan",
+        "price": 20.0,
+        "duration": "1 month"
+    },
+    {
+        "plan_id": 2,
+        "name": "Premium Plan",
+        "price": 50.0,
+        "duration": "3 months"
+    }
+]
