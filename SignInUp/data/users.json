@@ -1,1 +1,12 @@
-[{"user_id": 1, "username": "benja", "password_hash": "a3e690053061793bb12ad4c32aace5856f57f1694d3608df1379d240ce1bbc5b"}, {"user_id": 2, "username": "sindri rafn", "password_hash": "dbafc22b6d47cf55a3f95f5770e5ab330887a765182bcfa9196c5df54e0a3f3f"}, {"user_id": 3, "username": "sindri", "password_hash": "dbafc22b6d47cf55a3f95f5770e5ab330887a765182bcfa9196c5df54e0a3f3f"}, {"user_id": 4, "username": "benjaminr23", "password_hash": "51adfbb75c3c6810579d8a5377c4d26e505dee29602efc9f5920fa19c5b8c3d5"}, {"user_id": 5, "username": "freyr", "password_hash": "2f32b6d8449e0f03dbeb03f6c6082fae1d8e0cdaed601cadd40d48620a7aed01"}, {"user_id": 6, "username": "oli", "password_hash": "e96e02d8e47f2a7c03be5117b3ed175c52aa30fb22028cf9c96f261563577605"}, {"user_id": 7, "username": "oli2", "password_hash": "e96e02d8e47f2a7c03be5117b3ed175c52aa30fb22028cf9c96f261563577605"}]
+[
+    {
+        "user_id": 1,
+        "username": "benja",
+        "password_hash": "a3e690053061793bb12ad4c32aace5856f57f1694d3608df1379d240ce1bbc5b"
+    },
+    {
+        "user_id": 2,
+        "username": "sindri",
+        "password_hash": "dbafc22b6d47cf55a3f95f5770e5ab330887a765182bcfa9196c5df54e0a3f3f"
+    }
+]

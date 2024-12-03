@@ -14,7 +14,8 @@ class UserRepository:
 
     def save_users(self, users):
         with open(self.db_path, 'w') as file:
-            json.dump([user.__dict__ for user in users], file)
+            # Use indent to format the JSON with newlines and indentation for readability
+            json.dump([user.__dict__ for user in users], file, indent=4)
 
     def find_by_username(self, username):
         users = self.load_users()
