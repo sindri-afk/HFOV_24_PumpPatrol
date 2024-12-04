@@ -18,5 +18,10 @@
         "user_id": 4,
         "username": "olli",
         "password_hash": "14c2529eb4498c5d1ffd6915d05bf58a91bdda796af59f41d480d11c099d0479"
+    },
+    {
+        "user_id": 5,
+        "username": "sunna",
+        "password_hash": "840226b8f303f2016ffaf42bc5087eab7376cd3acb9610512a05d35ab1e973aa"
     }
 ]

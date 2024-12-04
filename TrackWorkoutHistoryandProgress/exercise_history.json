@@ -1,0 +1,56 @@
+[
+    {
+        "exercise": "yoga",
+        "duration": "30 minutes",
+        "intensity": "high"
+    },
+    {
+        "exercise": "yoga",
+        "duration": "15 minutes",
+        "intensity": "light"
+    },
+    {
+        "exercise": "bicep curl",
+        "duration": "600 minutes",
+        "intensity": "High"
+    },
+    {
+        "exercise": "handahlaup",
+        "duration": "60 minutes",
+        "intensity": "Moderate"
+    },
+    {
+        "exercise": "armbeygjut",
+        "duration": "1 minute",
+        "intensity": "Moderate"
+    },
+    {
+        "exercise": "handahlaup",
+        "duration": "60 minutea",
+        "intensity": "high"
+    },
+    {
+        "exercise": "bicep curls",
+        "duration": "30 minutes",
+        "intensity": "High",
+        "username": "benja"
+    },
+    {
+        "exercise": "handstada",
+        "duration": "10 minutes",
+        "intensity": "High",
+        "username": "benja"
+    },
+    {
+        "exercise": "handahlaup",
+        "duration": "555 minutes",
+        "intensity": "Light",
+        "username": "sunna"
+    },
+    {
+        "exercise": "Hoppa",
+        "duration": "1 minutes",
+        "intensity": "High",
+        "username": "sunna"
+    }
+]

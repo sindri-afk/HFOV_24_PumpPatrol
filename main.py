@@ -1,6 +1,7 @@
 import time
 from SignInUp.controllers.auth_controller import AuthController
 from MembershipPlan.services.membership_service import MembershipService
+from TrackWorkoutHistoryandProgress.workout_controller import track_exercise, view_exercise_history
 
 from display import display_menu
 
@@ -21,6 +22,15 @@ def buy_membership(plan_id):
     membership_service.buy_membership(plan_id)  # Handled by MembershipService
     time.sleep(2)
     display_menu("City Gym Hub", user_main_menu)
+
+def track_workout_history_and_progress(user):
+    workout_menu = {
+        1: ("Track Exercise", lambda: track_exercise(user, track_workout_history_and_progress)),
+        2: ("View Exercise History", lambda: view_exercise_history(user, track_workout_history_and_progress)),
+        3: ("Go back", lambda: display_menu("City Gym Hub", user_main_menu))
+    }
+    display_menu("Workout History and Progress", workout_menu)
+
 
 def sign_up():
     auth_controller.sign_up()  # Handled by AuthController
@@ -44,9 +54,11 @@ start_screen = {
         }
 
 user_main_menu = {
-        1: ("View Memberships", view_memberships),
-        2: ("Exit", None),
-        }
+    1: ("View Memberships", view_memberships),
+    2: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
+    3: ("Exit", None),
+}
+
 
 def main():
     
