@@ -20,5 +20,12 @@ class MembershipService:
 
         print(f"You have successfully purchased the ${membership.price} {membership.name} for {membership.duration}!")
 
+    def get_user_membership(self, user_id):
+        users = self.user_repository.load_users()
+        user = next((u for u in users if u.user_id == user_id), None)
+
+        membership = self.repository.get_membership_by_id(user.membership_id)
+        
+        print(f"Your current membership plan: {membership.name} - ${membership.price}, {membership.duration}.")
     
         
