@@ -18,9 +18,14 @@ def view_memberships():
     display_menu("Memberships", menu_options)
 
 def buy_membership(plan_id):
-    membership_service.buy_membership(plan_id)  # Handled by MembershipService
-    time.sleep(2)
+    global user
+    membership_service.buy_membership(user.user_id, plan_id)  # Handled by MembershipService
+    time.sleep(4)
     display_menu("City Gym Hub", user_main_menu)
+
+def view_current_membership_plan():
+    global user
+    pass
 
 def sign_up():
     auth_controller.sign_up()  # Handled by AuthController
@@ -45,7 +50,8 @@ start_screen = {
 
 user_main_menu = {
         1: ("View Memberships", view_memberships),
-        2: ("Exit", None),
+        2: ("View Current Membership Plan", view_current_membership_plan),
+        3: ("Exit", None),
         }
 
 def main():

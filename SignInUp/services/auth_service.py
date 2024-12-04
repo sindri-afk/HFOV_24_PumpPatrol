@@ -10,7 +10,7 @@ class AuthService:
         if self.user_repo.find_by_username(username):
             raise ValueError("Username already exists!")
         hashed_password = hash_password(password)
-        new_user = User(user_id=len(self.user_repo.load_users()) + 1, username=username, password_hash=hashed_password)
+        new_user = User(user_id=len(self.user_repo.load_users()) + 1, username=username, password_hash=hashed_password, membership_id=None)
         self.user_repo.add_user(new_user)
         return new_user
 
