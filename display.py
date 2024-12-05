@@ -38,20 +38,17 @@ def display_menu(title: str, options: dict):
     print("\n" * vertical_padding)
 
     # Get user input
-    try:
-        choice = int(input("Please select an option: "))
-        if choice in options:
-            _, action = options[choice]
-            if action:
-                os.system("clear" if os.name == "posix" else "cls")
-                action()  # Call the corresponding function
-            else:
-                print("Exiting... Goodbye!")
+
+    choice = int(input("Please select an option: "))
+    if choice in options:
+        _, action = options[choice]
+        if action:
+            os.system("clear" if os.name == "posix" else "cls")
+            action()  # Call the corresponding function
         else:
-            print("Invalid option. Please try again.")
-            time.sleep(1)
-            display_menu(title, options)
-    except ValueError:
-        print("Invalid input. Please enter a number.")
+            print("Exiting... Goodbye!")
+    else:
+        print("Invalid option. Please try again.")
         time.sleep(1)
         display_menu(title, options)
+    
