@@ -51,6 +51,7 @@ def display_menu(title: str, options: dict):
             print("Invalid option. Please try again.")
             time.sleep(1)
             display_menu(title, options)
+        
     except ValueError:
         print("Invalid input. Please enter a number.")
         time.sleep(1)
