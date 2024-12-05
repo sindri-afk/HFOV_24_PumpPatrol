@@ -38,4 +38,10 @@
 
 ## Customer's Requirements  
 1. **As an active gym member**, I want to view my workout history across different activities, **so that** I can track my fitness progress.  
-2. **As a potential gym user**, I want access to free trial sessions for various activities, **so that** I can make an informed decision before subscribing.  
+2. **As a potential gym user**, I want access to free trial sessions for various activities, **so that** I can make an informed decision before subscribing.
+
+## Sprint 2 - Upcoming user stories
+1. **As a business man**, I want the application to include virtual workouts, **so that** we stay in competition and improve the gym’s profitability.
+2. **As a trainer**, I want to be able to create classes online, **so that** my clients can sign up for them easily.
+3. **As a gym member**, I want to be able to easily access class booking and scheduling, **so that** I can manage my time efficiently.
+4. As a **fitness Influencer**, I want to track my workout history, **so that** I can stay motivated.
