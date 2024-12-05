@@ -12,5 +12,12 @@
         "password_hash": "4c91feb4c123a608138e9bb7eb35f712b862e8a06fb0b3aa9fef4ba7cc5114b1",
         "membership_id": 0,
         "trainer": "n"
+    },
+    {
+        "user_id": 3,
+        "username": "freyr",
+        "password_hash": "2f32b6d8449e0f03dbeb03f6c6082fae1d8e0cdaed601cadd40d48620a7aed01",
+        "membership_id": null,
+        "trainer": "n"
     }
 ]

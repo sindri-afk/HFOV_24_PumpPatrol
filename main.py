@@ -43,6 +43,23 @@ def view_current_membership_plan():
     time.sleep(4)
     display_menu("City Gym Hub", correct_main_menu())
 
+def display_workout_program(workouts):
+    for workout in workouts:
+        print(f"Program Name: {workout.program_name}")
+        print(f"Description:\n{workout.program_description}\n")
+    input("Press Enter to go back to the menu.")
+    display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
+
+
+def view_virtual_workout_programs():
+    workout = workouts.view_workout_programs()
+    menu_options = {
+        i: (workout.program_name, lambda w=workout: display_workout_program([w]))
+        for i, workout in enumerate(workout, 1)
+    }
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", user_main_menu))
+    display_menu("Workout Programs", menu_options)
+
 def sign_up():
     auth_controller.sign_up()  
     time.sleep(1)
@@ -77,7 +94,8 @@ start_screen = {
 user_main_menu = {
         1: ("View All Membership Plans", view_memberships),
         2: ("View Your Membership Plan", view_current_membership_plan),
-        3: ("Exit", None),
+        3: ("View Virtual Workout Programs", view_virtual_workout_programs),
+        4: ("Exit", None),
         }
 
 trainer_main_menu = {
