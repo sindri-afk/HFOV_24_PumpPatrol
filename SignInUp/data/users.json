@@ -19,5 +19,12 @@
         "password_hash": "2f32b6d8449e0f03dbeb03f6c6082fae1d8e0cdaed601cadd40d48620a7aed01",
         "membership_id": null,
         "trainer": "n"
+    },
+    {
+        "user_id": 4,
+        "username": "gog",
+        "password_hash": "c2f79bd0744cf217acc539aff5bbc884be3f7a2670891e4dcc3ca1737c25f086",
+        "membership_id": null,
+        "trainer": "n"
     }
 ]

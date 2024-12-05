@@ -57,7 +57,7 @@ def view_virtual_workout_programs():
         i: (workout.program_name, lambda w=workout: display_workout_program([w]))
         for i, workout in enumerate(workout, 1)
     }
-    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", user_main_menu))
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", correct_main_menu()))
     display_menu("Workout Programs", menu_options)
 
 def sign_up():
@@ -101,8 +101,9 @@ user_main_menu = {
 trainer_main_menu = {
     1: ("View All Membership Plans", view_memberships),
     2: ("View Your Membership Plan", view_current_membership_plan),
-    3: ("Create Class", create_class), 
-    4: ("Exit", None),
+    3: ("View Virtual Workout Programs", view_virtual_workout_programs),
+    4: ("Create Class", create_class), 
+    5: ("Exit", None),
 }
 
 membership_info = {
