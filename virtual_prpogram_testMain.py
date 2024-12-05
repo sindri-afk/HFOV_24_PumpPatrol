@@ -2,7 +2,6 @@ import time
 from SignInUp.controllers.auth_controller import AuthController
 from MembershipPlan.services.membership_service import MembershipService
 from VirtualPrograms.services.virtualworkout_service import VirtualWorkoutService
-from VirtualPrograms.models.workout_display import display_workout_program
 from display import display_menu
 
 # Global variables
@@ -34,6 +33,15 @@ def buy_membership(plan_id):
     display_menu("City Gym Hub", user_main_menu)
 
 
+# added function to main instead of importing from VirtualPrograms.models.workout_display
+def display_workout_program(workouts):
+    for workout in workouts:
+        print(f"Program Name: {workout.program_name}")
+        print(f"Description:\n{workout.program_description}")
+    input("Press Enter to go back to the menu.")
+    display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
+
+
 def view_virtual_workout_programs():
     workout = workouts.view_workout_programs()
     menu_options = {
@@ -42,7 +50,7 @@ def view_virtual_workout_programs():
     }
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", user_main_menu))
     display_menu("Workout Programs", menu_options)
-
+    
 
 def sign_up():
     """
