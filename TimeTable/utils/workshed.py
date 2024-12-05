@@ -3,9 +3,6 @@ class Toolbelt:
     def back_to_time_table(self):
         from schedule_main import main as sched_main
         sched_main()
-    def back_to_main_menu(self):
-        from schedule_main import main as sched_main
-        sched_main()
     def draw_table(self):
         from services.time_table import TimeTable
         tt = TimeTable()

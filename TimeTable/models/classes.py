@@ -5,7 +5,7 @@ class Yoga:
         self.location = "CityGym Hub"
     
     def get_details(self):
-        return f"Yoga class with {self.teacher} \nlocation: {self.location} \nduration: {self.duration} minutes"
+        return f"Yoga class with {self.teacher} \nLocation: {self.location} \nDuration: {self.duration} minutes\n"
 
 class Cardio:
     def __init__(self):
@@ -14,7 +14,7 @@ class Cardio:
         self.location = "CityGym Hub"
     
     def get_details(self):
-        return f"Cardio class with {self.teacher} \nlocation: {self.location} \nduration: {self.duration} minutes and then stretching for {self.duration} minutes"
+        return f"Cardio class with {self.teacher} \nLocation: {self.location} \nDuration: {self.duration} minutes and then stretching for {self.duration} minutes\n"
     
 class Crossfit:
     def __init__(self):
@@ -23,5 +23,5 @@ class Crossfit:
         self.location = "CityGym Hub"
     
     def get_details(self):
-        return f"Crossfit class with {self.teacher}\nlocation: {self.location} \nduration: 4 sets of {self.duration} minute exercises"
+        return f"Crossfit class with {self.teacher}\nLocation: {self.location} \nDuration: 4 sets of {self.duration} minute exercises\n"
         
