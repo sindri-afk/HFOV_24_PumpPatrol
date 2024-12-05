@@ -6,6 +6,7 @@ class ClassController:
 
     def create_class(self):
         print("Enter Class Details:")
+
         name = input("Class Name: ")
         description = input("Description: ")
         capacity = int(input("Capacity: "))
