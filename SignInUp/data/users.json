@@ -1,22 +1,3 @@
 [
-    {
-        "user_id": 1,
-        "username": "benja",
-        "password_hash": "a3e690053061793bb12ad4c32aace5856f57f1694d3608df1379d240ce1bbc5b"
-    },
-    {
-        "user_id": 2,
-        "username": "sindri",
-        "password_hash": "dbafc22b6d47cf55a3f95f5770e5ab330887a765182bcfa9196c5df54e0a3f3f"
-    },
-    {
-        "user_id": 3,
-        "username": "oli",
-        "password_hash": "e96e02d8e47f2a7c03be5117b3ed175c52aa30fb22028cf9c96f261563577605"
-    },
-    {
-        "user_id": 4,
-        "username": "olli",
-        "password_hash": "14c2529eb4498c5d1ffd6915d05bf58a91bdda796af59f41d480d11c099d0479"
-    }
+
 ]

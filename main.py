@@ -37,9 +37,6 @@ def buy_membership(plan_id):
     time.sleep(4)
     display_menu("City Gym Hub", user_main_menu)
 
-def view_membership_info():
-    pass
-
 def view_current_membership_plan():
     global user
     membership_service.get_user_membership(user.user_id)
