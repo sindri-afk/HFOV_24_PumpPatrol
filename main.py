@@ -2,6 +2,7 @@ import time
 from SignInUp.controllers.auth_controller import AuthController
 from MembershipPlan.services.membership_service import MembershipService
 from CreateClass.controllers.class_controller import ClassController  
+from VirtualPrograms.services.virtualworkout_service import VirtualWorkoutService
 
 from display import display_menu
 
@@ -10,6 +11,7 @@ user = None
 auth_controller = AuthController()
 membership_service = MembershipService()
 class_controller = ClassController()
+workouts = VirtualWorkoutService()
 
 
 def correct_main_menu():
@@ -33,6 +35,22 @@ def buy_membership(plan_id):
     time.sleep(2)
     display_menu(f"{user.username}'s City Gym Hub", correct_main_menu())
 
+def display_workout_program(workouts):
+    for workout in workouts:
+        print(f"Program Name: {workout.program_name}")
+        print(f"Description:\n{workout.program_description}\n")
+    input("Press Enter to go back to the menu.")
+    display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
+
+
+def view_virtual_workout_programs():
+    workout = workouts.view_workout_programs()
+    menu_options = {
+        i: (workout.program_name, lambda w=workout: display_workout_program([w]))
+        for i, workout in enumerate(workout, 1)
+    }
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", user_main_menu))
+    display_menu("Workout Programs", menu_options)
 
 def sign_up():
     auth_controller.sign_up()  
@@ -67,7 +85,8 @@ start_screen = {
 
 user_main_menu = {
     1: ("View Memberships", view_memberships),
-    2: ("Exit", None),
+    2: ("View Virtual Workout Programs", view_virtual_workout_programs),
+    3: ("Exit", None),
 }
 
 trainer_main_menu = {

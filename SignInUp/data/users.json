@@ -16,5 +16,11 @@
         "username": "gaggy",
         "password_hash": "9ec6ba35d484dc1296f448b3e2ac6d813cdef2019214368cb7fed88c455b76d0",
         "trainer": "y"
+    },
+    {
+        "user_id": 4,
+        "username": "freyr",
+        "password_hash": "2f32b6d8449e0f03dbeb03f6c6082fae1d8e0cdaed601cadd40d48620a7aed01",
+        "trainer": "n"
     }
 ]
