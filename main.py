@@ -55,6 +55,11 @@ def create_class():
 
 user_main_menu = {
     1: ("View Memberships", view_memberships),
+    3: ("Exit", None),
+}
+
+trainer_main_menu = {
+    1: ("View Memberships", view_memberships),
     2: ("Create Class", create_class), 
     3: ("Exit", None),
 }
@@ -64,8 +69,11 @@ def main():
     
     display_menu("City Gym Hub", start_screen)
 
-    if user:
+    if user.trainer == "n":
         display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
+    
+    if user.trainer == "y":
+        display_menu(f"{user.username}'s City Gym Hub", trainer_main_menu)
 
 
 if __name__ == "__main__":
