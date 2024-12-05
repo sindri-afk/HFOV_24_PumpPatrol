@@ -1,13 +1,17 @@
 import time
 from SignInUp.controllers.auth_controller import AuthController
 from MembershipPlan.services.membership_service import MembershipService
+from controllers.class_controller import ClassController  # Import the new ClassController
 
 from display import display_menu
 
+# Global variables
 user = None
 auth_controller = AuthController()
 membership_service = MembershipService()
+class_controller = ClassController()  # Initialize ClassController
 
+# Define functions for menu actions
 def view_memberships():
     memberships = membership_service.view_memberships()  # Handled by MembershipService
     menu_options = {
@@ -37,25 +41,28 @@ def sign_in():
         time.sleep(1)
         main()
 
+# Define menus
 start_screen = {
-        1: ("Sign Up", sign_up),
-        2: ("Sign In", sign_in),
-        3: ("Exit", None),
-        }
+    1: ("Sign Up", sign_up),
+    2: ("Sign In", sign_in),
+    3: ("Exit", None),
+}
 
 user_main_menu = {
-        1: ("View Memberships", view_memberships),
-        2: ("Exit", None),
-        }
+    1: ("View Memberships", view_memberships),
+    2: ("Create Class", class_controller.create_class),  # Add the Create Class action
+    3: ("Exit", None),
+}
 
+# Main function
 def main():
-    
-    # Registering user
+    # Display the start screen
     display_menu("City Gym Hub", start_screen)
 
-    # User main menu
+    # Display user main menu after signing in
     if user:
         display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
 
+# Entry point
 if __name__ == "__main__":
     main()
