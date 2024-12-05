@@ -26,21 +26,21 @@ def view_memberships():
         i: (f"{m.name} - ${m.price} for {m.duration}", lambda m_id=m.plan_id: buy_membership(m_id))
         for i, m in enumerate(memberships, 1)
     }
-    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", correct_main_menu()))
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Memberships", menu_options)
 
 
 def buy_membership(plan_id):
     membership_service.buy_membership(plan_id)  
     time.sleep(2)
-    display_menu(f"{user.username}'s City Gym Hub", correct_main_menu())
+    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
 
 def display_workout_program(workouts):
     for workout in workouts:
         print(f"Program Name: {workout.program_name}")
         print(f"Description:\n{workout.program_description}\n")
     input("Press Enter to go back to the menu.")
-    display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
+    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", user_main_menu)
 
 
 def view_virtual_workout_programs():
@@ -49,7 +49,7 @@ def view_virtual_workout_programs():
         i: (workout.program_name, lambda w=workout: display_workout_program([w]))
         for i, workout in enumerate(workout, 1)
     }
-    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", user_main_menu))
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", user_main_menu))
     display_menu("Workout Programs", menu_options)
 
 def sign_up():
@@ -62,9 +62,9 @@ def sign_in():
     global user
     user = auth_controller.sign_in() 
     if user:
-        print(f"Welcome {user.username}!")
+        print(f"Welcome {(user.username).capitalize()}!")
         time.sleep(1)
-        display_menu(f"{user.username}'s City Gym Hub", correct_main_menu())
+        display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
     else:
         time.sleep(1)
         main()
@@ -73,7 +73,7 @@ def sign_in():
 def create_class():
     class_controller.create_class()
     time.sleep(2)
-    display_menu(f"{user.username}'s City Gym Hub", correct_main_menu())
+    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
 
 
 # Menus
