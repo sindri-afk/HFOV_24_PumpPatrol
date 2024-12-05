@@ -14,6 +14,7 @@ def view_memberships():
         i: (f"{m.name} - ${m.price} for {m.duration}", lambda m_id=m.plan_id: buy_membership(m_id))
         for i, m in enumerate(memberships, 1)
     }
+    menu_options[len(menu_options) + 1] = ("Membership Plans Information", lambda: display_menu("Membership Information", membership_info))
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu("City Gym Hub", user_main_menu))
     display_menu("Memberships", menu_options)
 
@@ -22,6 +23,9 @@ def buy_membership(plan_id):
     membership_service.buy_membership(user.user_id, plan_id)  # Handled by MembershipService
     time.sleep(4)
     display_menu("City Gym Hub", user_main_menu)
+
+def view_membership_info():
+    pass
 
 def view_current_membership_plan():
     global user
@@ -55,6 +59,17 @@ user_main_menu = {
         2: ("View Your Membership Plan", view_current_membership_plan),
         3: ("Exit", None),
         }
+membership_info = {
+        1: ("The Basic Plan provides access to the main gym hall "
+            "and all equipment and machines there.", None),
+        2: ("The Premium Plan provides the same amenities as "
+            "the Basic Plan while also giving you acces to "
+            "our many classes we have, for example, CrossFit, "
+            "Yoga and Pilates. The Premium Plan also gives you access "
+            "to our spa area with a sauna, a cold tub and a hot tub.", None),
+        3: ("Go back.", view_memberships)
+        }
+
 
 def main():
     
