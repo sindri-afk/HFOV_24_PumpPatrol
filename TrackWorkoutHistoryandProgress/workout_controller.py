@@ -21,9 +21,7 @@ def track_exercise(user, go_back_callback):
     if choice == "1":
         track_exercise(user, go_back_callback)
     elif choice == "2":
-        return
-    go_back_callback(user)
-
+        go_back_callback(user)
 
 def view_exercise_history(user, go_back_callback):
     print(f"\nExercise History for {user.username}")

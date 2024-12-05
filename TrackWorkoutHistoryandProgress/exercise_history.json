@@ -52,5 +52,41 @@
         "duration": "1 minutes",
         "intensity": "High",
         "username": "sunna"
+    },
+    {
+        "exercise": "armbeygjur",
+        "duration": "30 minutes",
+        "intensity": "Moderate",
+        "username": "sunna"
+    },
+    {
+        "exercise": "hl\u00e6gja",
+        "duration": "30 minutes",
+        "intensity": "High",
+        "username": "benja"
+    },
+    {
+        "exercise": "",
+        "duration": "",
+        "intensity": "",
+        "username": "benja"
+    },
+    {
+        "exercise": "",
+        "duration": "",
+        "intensity": "",
+        "username": "benja"
+    },
+    {
+        "exercise": "",
+        "duration": "",
+        "intensity": "",
+        "username": "benja"
+    },
+    {
+        "exercise": "hopp",
+        "duration": "15 minutes",
+        "intensity": "HIgh",
+        "username": "benja"
     }
 ]
