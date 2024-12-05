@@ -1,0 +1,30 @@
+
+1. 06:30 - 07:30: Yoga
+2. 07:30 - 08:30: CrossFit
+3. 08:30 - 09:30: Cardio
+4. 9:30 - 10:30: Yoga
+5. 10:30 - 11:30: CrossFit
+6. 11:30 - 12:30: Cardio
+7. 12:30 - 13:30: Yoga
+8. 13:30 - 14:30: CrossFit
+9. 14:30 - 15:30: Cardio
+10. 15:30 - 16:30: Yoga
+11. 16:30 - 17:00: CrossFit
+
+
+enter E to exit.
+choose class: ____
+
+
+
+
+
+
+
+
+
+
+class chosen = {11:30 - 12:30: Cardio}
+1. book class
+2. details 
+3. exit 
