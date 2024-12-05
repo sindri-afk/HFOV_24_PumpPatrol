@@ -26,6 +26,9 @@ class MembershipService:
 
         membership = self.repository.get_membership_by_id(user.membership_id)
         
-        print(f"Your current membership plan: {membership.name} - ${membership.price}, {membership.duration}.")
+        if user.membership_id != 0:
+            print(f"Your current membership plan: {membership.name} - ${membership.price}, {membership.duration}.")
+        else:
+            print(f"You have not purchased a membership plan yet!")
     
         

@@ -21,13 +21,13 @@ def correct_main_menu():
 
 
 def view_memberships():
-    memberships = membership_service.view_memberships() 
+    memberships = membership_service.view_memberships()
     menu_options = {
         i: (f"{m.name} - ${m.price} for {m.duration}", lambda m_id=m.plan_id: buy_membership(m_id))
         for i, m in enumerate(memberships, 1)
     }
     menu_options[len(menu_options) + 1] = ("Membership Plans Information", lambda: display_menu("Membership Information", membership_info))
-    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu("City Gym Hub", user_main_menu))
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu("City Gym Hub", correct_main_menu()))
     display_menu("Memberships", menu_options)
 
 
@@ -35,13 +35,13 @@ def buy_membership(plan_id):
     global user
     membership_service.buy_membership(user.user_id, plan_id)  # Handled by MembershipService
     time.sleep(4)
-    display_menu("City Gym Hub", user_main_menu)
+    display_menu("City Gym Hub", correct_main_menu())
 
 def view_current_membership_plan():
     global user
     membership_service.get_user_membership(user.user_id)
     time.sleep(4)
-    display_menu("City Gym Hub", user_main_menu)
+    display_menu("City Gym Hub", correct_main_menu())
 
 def sign_up():
     auth_controller.sign_up()  
@@ -79,6 +79,14 @@ user_main_menu = {
         2: ("View Your Membership Plan", view_current_membership_plan),
         3: ("Exit", None),
         }
+
+trainer_main_menu = {
+    1: ("View All Membership Plans", view_memberships),
+    2: ("View Your Membership Plan", view_current_membership_plan),
+    3: ("Create Class", create_class), 
+    4: ("Exit", None),
+}
+
 membership_info = {
         1: ("The Basic Plan provides access to the main gym hall "
             "and all equipment and machines there.", None),

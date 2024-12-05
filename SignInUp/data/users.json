@@ -1,3 +1,16 @@
 [
-
+    {
+        "user_id": 1,
+        "username": "grog",
+        "password_hash": "38de90475bb334fb3dea5d54f250500aba60fe2c6158115d342b06bcb46e39bf",
+        "membership_id": 5,
+        "trainer": "y"
+    },
+    {
+        "user_id": 2,
+        "username": "spoon",
+        "password_hash": "4c91feb4c123a608138e9bb7eb35f712b862e8a06fb0b3aa9fef4ba7cc5114b1",
+        "membership_id": 0,
+        "trainer": "n"
+    }
 ]

@@ -15,5 +15,5 @@ class MembershipRepository:
         for membership in memberships:
             if membership.plan_id == plan_id:
                 return membership
-        return None
+        return 0
  
