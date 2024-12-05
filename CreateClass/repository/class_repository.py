@@ -1,5 +1,5 @@
 import json
-from models.class_model import ClassModel
+from ..models.class_model import ClassModel
 
 class ClassRepository:
     def __init__(self, file_path="data/classes.json"):

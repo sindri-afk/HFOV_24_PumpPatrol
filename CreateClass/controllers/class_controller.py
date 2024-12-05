@@ -1,4 +1,4 @@
-from services.class_service import ClassService
+from ..services.class_service import ClassService
 
 class ClassController:
     def __init__(self):
