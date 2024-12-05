@@ -6,11 +6,11 @@ class AuthService:
     def __init__(self, user_repo: UserRepository):
         self.user_repo = user_repo
 
-    def sign_up(self, username, password):
+    def sign_up(self, username, password, trainer):
         if self.user_repo.find_by_username(username):
             raise ValueError("Username already exists!")
         hashed_password = hash_password(password)
-        new_user = User(user_id=len(self.user_repo.load_users()) + 1, username=username, password_hash=hashed_password)
+        new_user = User(user_id=len(self.user_repo.load_users()) + 1, username=username, password_hash=hashed_password, trainer=trainer)
         self.user_repo.add_user(new_user)
         return new_user
 
