@@ -9,5 +9,5 @@ class MembershipController:
         for membership in memberships:
             print(membership.to_dict())
 
-    def buy_membership(self, plan_id):
-        print(self.service.buy_membership(plan_id))
+    def buy_membership(self, user_id, plan_id):
+        result = self.service.buy_membership(user_id, plan_id)
