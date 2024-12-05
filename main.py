@@ -41,16 +41,21 @@ def sign_in():
         time.sleep(1)
         main()
 
+ 
 
 start_screen = {
     1: ("Sign Up", sign_up),
     2: ("Sign In", sign_in),
     3: ("Exit", None),
 }
+def create_class():
+    class_controller.create_class()
+    time.sleep(2)
+    display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
 
 user_main_menu = {
     1: ("View Memberships", view_memberships),
-    2: ("Create Class", class_controller.create_class), 
+    2: ("Create Class", create_class), 
     3: ("Exit", None),
 }
 
@@ -59,7 +64,6 @@ def main():
     
     display_menu("City Gym Hub", start_screen)
 
-    
     if user:
         display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
 

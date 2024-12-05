@@ -5,7 +5,7 @@ class ClassService:
     def __init__(self):
         self.repository = ClassRepository()
 
-    def create_class(self, name, date_time, description, capacity):
-        new_class = ClassModel(name, date_time, description, capacity)
+    def create_class(self, name, description, capacity, date_time):
+        new_class = ClassModel(name, description, capacity, date_time)
         self.repository.save_class(new_class)
         return new_class
