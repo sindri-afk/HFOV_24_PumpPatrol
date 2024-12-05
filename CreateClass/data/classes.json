@@ -1,9 +1,37 @@
 [
     {
-        "class_id": "8709fffd-847a-41f7-9a8e-f29d84368dee",
+        "class_id": "e00ed346-77f0-4910-b2d5-2cf5f46462ab",
         "name": "shabsing",
         "description": "freybux naky",
         "capacity": 2,
         "date_time": "2024"
+    },
+    {
+        "class_id": "20fab095-934e-421d-b798-8f047f8aeaee",
+        "name": "1",
+        "description": "1",
+        "capacity": 1,
+        "date_time": "1"
+    },
+    {
+        "class_id": "de66f58f-7e1d-4687-ba95-26c3f1d64308",
+        "name": "1",
+        "description": "1",
+        "capacity": 1,
+        "date_time": "1"
+    },
+    {
+        "class_id": "6e214c42-b840-4cb8-873f-25b977488c6b",
+        "name": "1",
+        "description": "1",
+        "capacity": 1,
+        "date_time": "1"
+    },
+    {
+        "class_id": "34db7dc5-f3bd-4bdb-9f8d-242b4bee63ff",
+        "name": "1",
+        "description": "1",
+        "capacity": 1,
+        "date_time": "1"
     }
 ]
