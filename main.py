@@ -55,7 +55,7 @@ def create_class():
 
 user_main_menu = {
     1: ("View Memberships", view_memberships),
-    3: ("Exit", None),
+    2: ("Exit", None),
 }
 
 trainer_main_menu = {
