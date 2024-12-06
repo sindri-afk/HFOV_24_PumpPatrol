@@ -18,15 +18,6 @@ def view_memberships():
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu("City Gym Hub", user_main_menu))
     display_menu("Memberships", menu_options)
 
-def track_exercise(user, return_to_menu_callback):
-    while True:
-        exercise_menu = {
-            1: ("Add another exercise", None),  # Stay in the same menu
-            2: ("Go back", return_to_menu_callback),  # Return to the main menu
-        }
-        display_menu("Track Exercise", exercise_menu)
-        break
-
 def buy_membership(plan_id):
     membership_service.buy_membership(plan_id)  # Handled by MembershipService
     time.sleep(2)

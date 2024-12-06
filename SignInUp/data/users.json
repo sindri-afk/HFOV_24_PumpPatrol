@@ -23,5 +23,15 @@
         "user_id": 5,
         "username": "sunna",
         "password_hash": "840226b8f303f2016ffaf42bc5087eab7376cd3acb9610512a05d35ab1e973aa"
+    },
+    {
+        "user_id": 6,
+        "username": "hannes",
+        "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+        "user_id": 7,
+        "username": "1",
+        "password_hash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
     }
 ]
