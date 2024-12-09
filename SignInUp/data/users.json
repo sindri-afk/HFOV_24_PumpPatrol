@@ -1,60 +1,23 @@
 [
     {
         "user_id": 1,
-        "username": "grog",
-        "password_hash": "38de90475bb334fb3dea5d54f250500aba60fe2c6158115d342b06bcb46e39bf",
-        "membership_id": 5,
-        "trainer": "y"
+        "username": "g",
+        "password_hash": "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29",
+        "membership_id": null,
+        "trainer": "n"
     },
     {
         "user_id": 2,
-        "username": "spoon",
-        "password_hash": "4c91feb4c123a608138e9bb7eb35f712b862e8a06fb0b3aa9fef4ba7cc5114b1",
-        "membership_id": 0,
+        "username": "benja",
+        "password_hash": "a3e690053061793bb12ad4c32aace5856f57f1694d3608df1379d240ce1bbc5b",
+        "membership_id": null,
         "trainer": "n"
     },
     {
         "user_id": 3,
-        "username": "freyr",
-        "password_hash": "2f32b6d8449e0f03dbeb03f6c6082fae1d8e0cdaed601cadd40d48620a7aed01",
+        "username": "Olli",
+        "password_hash": "333e0a1e27815d0ceee55c473fe3dc93d56c63e3bee2b3b4aee8eed6d70191a3",
         "membership_id": null,
-        "trainer": "n"
-    },
-    {
-        "user_id": 4,
-        "username": "gog",
-        "password_hash": "c2f79bd0744cf217acc539aff5bbc884be3f7a2670891e4dcc3ca1737c25f086",
-        "membership_id": null,
-        "trainer": "n"
-    },
-    {
-        "user_id": 5,
-        "username": "sunna",
-        "password_hash": "840226b8f303f2016ffaf42bc5087eab7376cd3acb9610512a05d35ab1e973aa"
-    },
-    {
-        "user_id": 6,
-        "username": "hannes",
-        "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-        "user_id": 7,
-        "username": "1",
-        "password_hash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
-    },
-    {
-        "user_id": 8,
-        "username": "2",
-        "password_hash": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
-    },
-    {
-        "user_id": 9,
-        "username": "",
-        "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-        "user_id": 10,
-        "username": "q",
-        "password_hash": "8e35c2cd3bf6641bdb0e2050b76932cbb2e6034a0ddacc1d9bea82a6ba57f7cf"
+        "trainer": "y"
     }
 ]

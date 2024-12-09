@@ -65,7 +65,7 @@ def track_workout_history_and_progress(user):
     workout_menu = {
         1: ("Track Exercise", lambda: track_exercise(user, track_workout_history_and_progress)),
         2: ("View Exercise History", lambda: view_exercise_history(user, track_workout_history_and_progress)),
-        3: ("Go back", lambda: display_menu("City Gym Hub", user_main_menu))
+        3: ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))  # Call correct_main_menu() here
     }
     display_menu("Workout History and Progress", workout_menu)
 
@@ -102,19 +102,20 @@ start_screen = {
 }
 
 user_main_menu = {
-        1: ("View All Membership Plans", view_memberships),
-        2: ("View Your Membership Plan", view_current_membership_plan),
-        3: ("View Virtual Workout Programs", view_virtual_workout_programs),
-        4: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
-        5: ("Exit", None),
-        }
+    1: ("View All Membership Plans", view_memberships),
+    2: ("View Your Membership Plan", view_current_membership_plan),
+    3: ("View Virtual Workout Programs", view_virtual_workout_programs),
+    4: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
+    5: ("Exit", None),
+}
 
 trainer_main_menu = {
     1: ("View All Membership Plans", view_memberships),
     2: ("View Your Membership Plan", view_current_membership_plan),
     3: ("View Virtual Workout Programs", view_virtual_workout_programs),
-    4: ("Create Class", create_class), 
-    5: ("Exit", None),
+    4: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
+    5: ("Create Class", create_class), 
+    6: ("Exit", None),
 }
 
 membership_info = {

@@ -19,5 +19,47 @@
         "intensity": "Moderate",
         "timestamp": "2024-12-09T10:03:51.955532",
         "username": ""
+    },
+    {
+        "exercise": "hlaupa",
+        "duration": "30 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:48:06.314307",
+        "username": "g"
+    },
+    {
+        "exercise": "handahlaup",
+        "duration": "29 minutes",
+        "intensity": "light",
+        "timestamp": "2024-12-09T10:48:19.554832",
+        "username": "g"
+    },
+    {
+        "exercise": "hahahah",
+        "duration": "15 minutes",
+        "intensity": "Moderate",
+        "timestamp": "2024-12-09T10:53:05.368751",
+        "username": "g"
+    },
+    {
+        "exercise": "bicep curls",
+        "duration": "10 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:53:44.616789",
+        "username": "benja"
+    },
+    {
+        "exercise": "pump patrol exercuse",
+        "duration": "30 minutes",
+        "intensity": "Moderate",
+        "timestamp": "2024-12-09T10:54:03.420804",
+        "username": "benja"
+    },
+    {
+        "exercise": "Olla \u00e6fing",
+        "duration": "600 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:59:51.591034",
+        "username": "Olli"
     }
 ]

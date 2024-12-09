@@ -1,44 +1,51 @@
 [
     {
-        "class_id": "f18482f3-7972-4cca-9119-647d51ef1d6f",
+        "class_id": "b9068b82-d96b-471c-bdf7-2c15c3700916",
         "name": "shabsing",
         "description": "freybux naky",
         "capacity": 2,
         "date_time": "2024"
     },
     {
-        "class_id": "064fd9bf-9aab-4adc-81ef-7057d6796b9f",
+        "class_id": "60ebf28c-1fee-4087-adbe-5d7b83d4330a",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "c588de65-c328-4ab9-b25f-b6c5ed159cec",
+        "class_id": "68bf0840-2e4d-43cf-ae48-fd5c6bc273ef",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "c923fe60-6315-4a44-b86e-ca097ca987c3",
+        "class_id": "16d0c550-5125-4aa7-9574-98d861645a21",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "3acccf2c-2bea-4957-aa4e-a1eb728e5ec9",
+        "class_id": "02f9025f-1ca4-4014-a0d4-295808e610f7",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "558d119a-e9b4-48fe-a340-1c82299605f7",
+        "class_id": "817a04ca-ab4e-457a-9ab8-d09c456e579e",
         "name": "crossfit me\u00f0 gog",
         "description": "\u00e1 fj\u00f3ra f\u00e6tur, n\u00fana",
         "capacity": 15,
         "date_time": "2024-12-23 16:15"
+    },
+    {
+        "class_id": "bab51906-11db-40b6-b50b-cbe70ffed64c",
+        "name": "handahlaupa \u00e6fing Olla G",
+        "description": "h\u00e9r kenni \u00e9g ykkkur handahlau\u00f0",
+        "capacity": 30,
+        "date_time": "2024-12-09 20:20"
     }
 ]
