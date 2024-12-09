@@ -33,5 +33,20 @@
         "user_id": 7,
         "username": "1",
         "password_hash": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+        "user_id": 8,
+        "username": "2",
+        "password_hash": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
+    },
+    {
+        "user_id": 9,
+        "username": "",
+        "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+        "user_id": 10,
+        "username": "q",
+        "password_hash": "8e35c2cd3bf6641bdb0e2050b76932cbb2e6034a0ddacc1d9bea82a6ba57f7cf"
     }
 ]
