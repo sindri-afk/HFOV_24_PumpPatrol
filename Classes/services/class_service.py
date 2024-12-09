@@ -1,5 +1,5 @@
-from CreateClass.repository.class_repository import ClassRepository
-from CreateClass.models.class_model import ClassModel
+from Classes.repository.class_repository import ClassRepository
+from Classes.models.class_model import ClassModel
 
 class ClassService:
     def __init__(self):

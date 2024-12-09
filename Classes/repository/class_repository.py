@@ -2,7 +2,7 @@ import json
 from ..models.class_model import ClassModel
 
 class ClassRepository:
-    def __init__(self, file_path="CreateClass/data/classes.json"):
+    def __init__(self, file_path="Classes/data/classes.json"):
         self.file_path = file_path
 
     def load_classes(self):

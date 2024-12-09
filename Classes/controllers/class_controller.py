@@ -1,8 +1,10 @@
 from ..services.class_service import ClassService
+from ..repository.class_repository import ClassRepository
 
 class ClassController:
     def __init__(self):
         self.service = ClassService()
+        self.repository = ClassRepository()
 
     def get_input_or_cancel(self, prompt):
         user_input = input(prompt).strip()
@@ -40,3 +42,5 @@ class ClassController:
 
         new_class = self.service.create_class(name, description, capacity, date_time)
         print(f"Class '{new_class.name}' created successfully!")
+    
+

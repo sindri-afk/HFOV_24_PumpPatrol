@@ -1,9 +1,10 @@
 import time
 from SignInUp.controllers.auth_controller import AuthController
 from MembershipPlan.services.membership_service import MembershipService
-from CreateClass.controllers.class_controller import ClassController  
+from Classes.controllers.class_controller import ClassController  
 from VirtualPrograms.services.virtualworkout_service import VirtualWorkoutService
 from TrackWorkoutHistoryandProgress.workout_controller import track_exercise, view_exercise_history
+from Classes.repository.class_repository import ClassRepository
 
 from display import display_menu
 
@@ -13,6 +14,7 @@ auth_controller = AuthController()
 membership_service = MembershipService()
 class_controller = ClassController()
 workouts = VirtualWorkoutService()
+class_repo = ClassRepository()
 
 
 def correct_main_menu():
@@ -70,6 +72,45 @@ def track_workout_history_and_progress(user):
     display_menu("Workout History and Progress", workout_menu)
 
 
+# fix later
+def book_classes(classes):
+    if not classes:
+        print("No classes available.")
+        return
+
+    print("Classes:")
+    for i, c in enumerate(classes, 1):
+        print(f"{i}. {c.name} - {c.date_time}")
+        print(f"Description: {c.description}")
+    print()
+    menu_options = {
+        1: ("Book Class", None),
+        2: ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
+    }
+    display_menu("Classes", menu_options)
+
+def view_classes():
+    classes = class_repo.load_classes()
+    for i, c in enumerate(classes, 1):
+        print(f"{i}. {c.name} - {c.date_time}")
+        print()
+    input("Press Enter to go back to the menu.")
+    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
+
+
+
+def display_classes():
+    classes = class_repo.load_classes()
+    menu_options = {
+        i: (c.name, lambda c=c: book_classes([c]))
+        for i, c in enumerate(classes, 1)
+    }
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
+    display_menu("Classes", menu_options)
+
+
+
+
 def sign_up():
     auth_controller.sign_up()  
     time.sleep(1)
@@ -105,8 +146,9 @@ user_main_menu = {
     1: ("View All Membership Plans", view_memberships),
     2: ("View Your Membership Plan", view_current_membership_plan),
     3: ("View Virtual Workout Programs", view_virtual_workout_programs),
-    4: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
-    5: ("Exit", None),
+    4: ("View Classes", view_classes),
+    5: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
+    6: ("Exit", None),
 }
 
 trainer_main_menu = {
