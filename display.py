@@ -1,6 +1,7 @@
 import os
 import shutil
 import time
+import textwrap
 
 def display_menu(title: str, options: dict):
 
@@ -21,8 +22,15 @@ def display_menu(title: str, options: dict):
     # Prepare menu options
     menu_lines = []
     for key, (desc, _) in options.items():
-        option_text = f"{key}. {desc}".ljust(box_width - 2)  # Ensure alignment
-        menu_lines.append(option_text)
+        wrapped_desc = textwrap.wrap(desc, box_width - 4)
+        for i, line in enumerate(wrapped_desc):
+            if i == 0:
+                menu_lines.append(f"{key}. {line}".ljust(box_width - 2))
+            else:
+                menu_lines.append(f"    {line}".ljust(box_width - 2))
+                
+        # option_text = f"{key}. {desc}".ljust(box_width - 2)  # Ensure alignment
+        # menu_lines.append(option_text)
 
     # Clear the terminal
     os.system("clear" if os.name == "posix" else "cls")
@@ -51,6 +59,7 @@ def display_menu(title: str, options: dict):
             print("Invalid option. Please try again.")
             time.sleep(1)
             display_menu(title, options)
+        
     except ValueError:
         print("Invalid input. Please enter a number.")
         time.sleep(1)
