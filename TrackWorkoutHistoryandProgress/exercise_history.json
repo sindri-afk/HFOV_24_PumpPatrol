@@ -61,5 +61,26 @@
         "intensity": "High",
         "timestamp": "2024-12-09T10:59:51.591034",
         "username": "Olli"
+    },
+    {
+        "exercise": "",
+        "duration": "",
+        "intensity": "",
+        "timestamp": "2024-12-09T21:26:13.374424",
+        "username": "2"
+    },
+    {
+        "exercise": "hoppa",
+        "duration": "2 min",
+        "intensity": "High",
+        "timestamp": "2024-12-09T21:37:28.956682",
+        "username": "2"
+    },
+    {
+        "exercise": "nei ha",
+        "duration": "wtf",
+        "intensity": "ha",
+        "timestamp": "2024-12-09T21:38:02.771721",
+        "username": "2"
     }
 ]

@@ -33,5 +33,19 @@
         "password_hash": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
         "membership_id": 0,
         "trainer": "n"
+    },
+    {
+        "user_id": 6,
+        "username": "",
+        "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "membership_id": 0,
+        "trainer": ""
+    },
+    {
+        "user_id": 7,
+        "username": "sunna",
+        "password_hash": "840226b8f303f2016ffaf42bc5087eab7376cd3acb9610512a05d35ab1e973aa",
+        "membership_id": 0,
+        "trainer": "n"
     }
 ]

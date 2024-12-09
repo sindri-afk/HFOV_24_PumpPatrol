@@ -1,23 +1,30 @@
 [
     {
+        "plan_name": "Full Plan",
+        "type_name": "Pay-As-You-Go",
+        "price": "100.0",
+        "duration": "10 times",
+        "username": "2"
+    },
+    {
         "plan_name": "Gym Plan",
-        "type_name": "Short-Term",
-        "price": 20.0,
-        "duration": "1 month",
+        "type_name": "Long-Term",
+        "price": "300.0",
+        "duration": "5 years",
         "username": "benja"
     },
     {
-        "plan_name": "Class Plan",
-        "type_name": "Long-Term",
-        "price": 200.0,
-        "duration": "1 year",
-        "username": "oliver"
+        "plan_name": "Guest Trial",
+        "type_name": "",
+        "price": "Free",
+        "duration": "1 week",
+        "username": ""
     },
     {
-        "plan_name": "Gym Plan",
-        "type_name": "Long-Term",
-        "price": "70.0",
-        "duration": "1 year",
-        "username": "2"
+        "plan_name": "Guest Trial",
+        "type_name": "",
+        "price": "Free",
+        "duration": "1 week",
+        "username": "sunna"
     }
 ]

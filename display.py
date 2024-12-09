@@ -25,7 +25,7 @@ def display_menu(title: str, options: dict):
         wrapped_desc = textwrap.wrap(desc, box_width - 4)
         for i, line in enumerate(wrapped_desc):
             if i == 0:
-                menu_lines.append(f"{key}. {line}".ljust(box_width - 2))
+                menu_lines.append(f"{key}: {line}".ljust(box_width - 2))
             else:
                 menu_lines.append(f"    {line}".ljust(box_width - 2))
                 
