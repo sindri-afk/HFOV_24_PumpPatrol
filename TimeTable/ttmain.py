@@ -2,7 +2,7 @@ from timetable_controller import TimeTableController
 from time_table_options import TimeTableMenuOptions as MenuOptions, ClassInspectionMenuOptions as ClassOptions
 
 
-def view_time_table():
+def view_time_tables():
     tt_controller = TimeTableController()
     tt_controller.draw_table()
     time_menu = MenuOptions()
@@ -10,4 +10,3 @@ def view_time_table():
 
 if __name__ == "__main__":
     view_time_table()
-
