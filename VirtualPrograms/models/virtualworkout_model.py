@@ -14,3 +14,4 @@ class Workout:
     @staticmethod
     def from_dict(data):
         return Workout(data["program id"], data["program name"], data["program description"])
+        
