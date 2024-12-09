@@ -1,0 +1,23 @@
+[
+    {
+        "exercise": "flying",
+        "duration": "30 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:01:54.301847",
+        "username": ""
+    },
+    {
+        "exercise": "hlaupa",
+        "duration": "1 minute",
+        "intensity": "Light",
+        "timestamp": "2024-12-09T10:03:29.604091",
+        "username": ""
+    },
+    {
+        "exercise": "bench press",
+        "duration": "100 minutes",
+        "intensity": "Moderate",
+        "timestamp": "2024-12-09T10:03:51.955532",
+        "username": ""
+    }
+]

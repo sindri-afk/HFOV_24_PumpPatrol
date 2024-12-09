@@ -3,6 +3,7 @@ from SignInUp.controllers.auth_controller import AuthController
 from MembershipPlan.services.membership_service import MembershipService
 from CreateClass.controllers.class_controller import ClassController  
 from VirtualPrograms.services.virtualworkout_service import VirtualWorkoutService
+from TrackWorkoutHistoryandProgress.workout_controller import track_exercise, view_exercise_history
 
 from display import display_menu
 
@@ -60,6 +61,15 @@ def view_virtual_workout_programs():
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Workout Programs", menu_options)
 
+def track_workout_history_and_progress(user):
+    workout_menu = {
+        1: ("Track Exercise", lambda: track_exercise(user, track_workout_history_and_progress)),
+        2: ("View Exercise History", lambda: view_exercise_history(user, track_workout_history_and_progress)),
+        3: ("Go back", lambda: display_menu("City Gym Hub", user_main_menu))
+    }
+    display_menu("Workout History and Progress", workout_menu)
+
+
 def sign_up():
     auth_controller.sign_up()  
     time.sleep(1)
@@ -95,7 +105,8 @@ user_main_menu = {
         1: ("View All Membership Plans", view_memberships),
         2: ("View Your Membership Plan", view_current_membership_plan),
         3: ("View Virtual Workout Programs", view_virtual_workout_programs),
-        4: ("Exit", None),
+        4: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
+        5: ("Exit", None),
         }
 
 trainer_main_menu = {
