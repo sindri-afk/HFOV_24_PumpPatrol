@@ -26,5 +26,12 @@
         "password_hash": "c2f79bd0744cf217acc539aff5bbc884be3f7a2670891e4dcc3ca1737c25f086",
         "membership_id": null,
         "trainer": "n"
+    },
+    {
+        "user_id": 5,
+        "username": "kalli",
+        "password_hash": "7854b73efd70669c45c18c3b97360c915cf57442948d2969a2c5fe5cb886b1de",
+        "membership_id": null,
+        "trainer": "y"
     }
 ]

@@ -27,7 +27,7 @@ def view_memberships():
         for i, m in enumerate(memberships, 1)
     }
     menu_options[len(menu_options) + 1] = ("Membership Plans Information", lambda: display_menu("Membership Information", membership_info))
-    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu("City Gym Hub", correct_main_menu()))
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Memberships", menu_options)
 
 
@@ -41,14 +41,14 @@ def view_current_membership_plan():
     global user
     membership_service.get_user_membership(user.user_id)
     time.sleep(4)
-    display_menu("City Gym Hub", correct_main_menu())
+    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
 
 def display_workout_program(workouts):
     for workout in workouts:
         print(f"Program Name: {workout.program_name}\n")
         print(f"Description:\n{workout.program_description}\n")
     input("Press Enter to go back to the menu.")
-    display_menu(f"{user.username}'s City Gym Hub", user_main_menu)
+    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", user_main_menu)
 
 
 def view_virtual_workout_programs():
@@ -57,7 +57,7 @@ def view_virtual_workout_programs():
         i: (workout.program_name, lambda w=workout: display_workout_program([w]))
         for i, workout in enumerate(workout, 1)
     }
-    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{user.username}'s City Gym Hub", correct_main_menu()))
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Workout Programs", menu_options)
 
 def sign_up():
