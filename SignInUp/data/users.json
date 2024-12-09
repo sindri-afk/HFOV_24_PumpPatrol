@@ -3,21 +3,21 @@
         "user_id": 1,
         "username": "g",
         "password_hash": "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29",
-        "membership_id": null,
+        "membership_id": 1,
         "trainer": "n"
     },
     {
         "user_id": 2,
         "username": "benja",
         "password_hash": "a3e690053061793bb12ad4c32aace5856f57f1694d3608df1379d240ce1bbc5b",
-        "membership_id": null,
+        "membership_id": 0,
         "trainer": "n"
     },
     {
         "user_id": 3,
         "username": "Olli",
         "password_hash": "333e0a1e27815d0ceee55c473fe3dc93d56c63e3bee2b3b4aee8eed6d70191a3",
-        "membership_id": null,
+        "membership_id": 0,
         "trainer": "y"
     }
 ]

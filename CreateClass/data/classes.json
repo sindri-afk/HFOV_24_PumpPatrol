@@ -1,51 +1,58 @@
 [
     {
-        "class_id": "b9068b82-d96b-471c-bdf7-2c15c3700916",
+        "class_id": "3fdbf253-ff67-4ca0-977d-05bb322acb31",
         "name": "shabsing",
         "description": "freybux naky",
         "capacity": 2,
         "date_time": "2024"
     },
     {
-        "class_id": "60ebf28c-1fee-4087-adbe-5d7b83d4330a",
+        "class_id": "1b716367-0a16-4a85-ad13-e04e5116745d",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "68bf0840-2e4d-43cf-ae48-fd5c6bc273ef",
+        "class_id": "744ccf53-7536-44f8-a8fb-c8a19e12407c",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "16d0c550-5125-4aa7-9574-98d861645a21",
+        "class_id": "2c9eaa72-5fdb-4eb3-aee8-11bedde7e9f2",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "02f9025f-1ca4-4014-a0d4-295808e610f7",
+        "class_id": "60167388-7dfe-40e5-a129-98b34eafa1db",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "817a04ca-ab4e-457a-9ab8-d09c456e579e",
+        "class_id": "a4eeda2c-2aa2-433d-9453-ee918ad540b6",
         "name": "crossfit me\u00f0 gog",
         "description": "\u00e1 fj\u00f3ra f\u00e6tur, n\u00fana",
         "capacity": 15,
         "date_time": "2024-12-23 16:15"
     },
     {
-        "class_id": "bab51906-11db-40b6-b50b-cbe70ffed64c",
+        "class_id": "65bdbd56-a600-4160-8d9b-5ab97795aac5",
         "name": "handahlaupa \u00e6fing Olla G",
         "description": "h\u00e9r kenni \u00e9g ykkkur handahlau\u00f0",
         "capacity": 30,
         "date_time": "2024-12-09 20:20"
+    },
+    {
+        "class_id": "8ea90b5d-f97d-4675-a6e7-b95f9918e285",
+        "name": "benjamin class",
+        "description": "benjo",
+        "capacity": 22,
+        "date_time": "2024-12-09 20:19"
     }
 ]
