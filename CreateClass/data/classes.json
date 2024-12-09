@@ -1,58 +1,65 @@
 [
     {
-        "class_id": "3fdbf253-ff67-4ca0-977d-05bb322acb31",
+        "class_id": "26cca4c2-e14d-4f1c-a1a1-431f50b4ed93",
         "name": "shabsing",
         "description": "freybux naky",
         "capacity": 2,
         "date_time": "2024"
     },
     {
-        "class_id": "1b716367-0a16-4a85-ad13-e04e5116745d",
+        "class_id": "e113d37d-003e-41c2-b681-5c962c5f7606",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "744ccf53-7536-44f8-a8fb-c8a19e12407c",
+        "class_id": "d5bb5250-a378-41d6-8ab4-a71d473318f8",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "2c9eaa72-5fdb-4eb3-aee8-11bedde7e9f2",
+        "class_id": "cc5f721c-c6f4-45f4-bcd0-01441b2c5ff9",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "60167388-7dfe-40e5-a129-98b34eafa1db",
+        "class_id": "d242eb53-aa25-4726-b992-f4b8bdbdeb70",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "a4eeda2c-2aa2-433d-9453-ee918ad540b6",
+        "class_id": "c788e217-b38c-4abd-9f61-926c8164bf24",
         "name": "crossfit me\u00f0 gog",
         "description": "\u00e1 fj\u00f3ra f\u00e6tur, n\u00fana",
         "capacity": 15,
         "date_time": "2024-12-23 16:15"
     },
     {
-        "class_id": "65bdbd56-a600-4160-8d9b-5ab97795aac5",
+        "class_id": "8d9c7504-182b-49c2-bf39-dffe86958874",
         "name": "handahlaupa \u00e6fing Olla G",
         "description": "h\u00e9r kenni \u00e9g ykkkur handahlau\u00f0",
         "capacity": 30,
         "date_time": "2024-12-09 20:20"
     },
     {
-        "class_id": "8ea90b5d-f97d-4675-a6e7-b95f9918e285",
+        "class_id": "3f0f04fa-bd53-49d7-b9af-53ecb3fa5a3e",
         "name": "benjamin class",
         "description": "benjo",
         "capacity": 22,
         "date_time": "2024-12-09 20:19"
+    },
+    {
+        "class_id": "714d47bf-07e8-4f1a-8cdb-705849cc2235",
+        "name": "lurking",
+        "description": "lurk",
+        "capacity": 2,
+        "date_time": "2030 11 69"
     }
 ]

@@ -47,5 +47,19 @@
         "password_hash": "840226b8f303f2016ffaf42bc5087eab7376cd3acb9610512a05d35ab1e973aa",
         "membership_id": 0,
         "trainer": "n"
+    },
+    {
+        "user_id": 8,
+        "username": "lara",
+        "password_hash": "242d0ec14bf4a1fbee5c1be7fa3180ba47c81119c305c49c398afaa336e340e2",
+        "membership_id": 0,
+        "trainer": "y"
+    },
+    {
+        "user_id": 9,
+        "username": "benjamin",
+        "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "membership_id": 0,
+        "trainer": "y"
     }
 ]

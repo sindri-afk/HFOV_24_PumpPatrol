@@ -33,20 +33,51 @@ def view_memberships():
 
 def buy_membership(plan_name, type_name, price, duration):
     global user
-    result = membership_service.buy_membership(user.username, plan_name, type_name, price, duration)  # Handled by MembershipService
-    
-    # Prepare the result information to display in the menu format
-    buy_membership_info = {
-        "Membership successfully updated or purchased for user": (user.username, view_memberships_menu),
-        "Plan": (plan_name, view_memberships_menu),
-        "Type": (type_name, view_memberships_menu),
-        "Price": (f"${price}", view_memberships_menu),
-        "Duration": (duration, view_memberships_menu),
-        0: ("Press 0 to go back to the memberships menu", view_memberships_menu)
-    }
-    
-    # Display the menu
-    display_menu("Membership Purchase Confirmation", buy_membership_info)
+
+    # Get the user's current membership status
+    user_membership = membership_service.get_user_membership(user.username)
+
+    # Check if the user already has any membership
+    if user_membership:
+        # If user already has a membership, prevent purchasing "Guest Trial" again
+        if plan_name == "Guest Trial":
+            buy_membership_info = {
+                "Error": ("The 'Guest Trial' is only available for new users       and cannot be purchased", view_memberships_menu),
+                0: ("Press 0 to go back to the memberships menu", view_memberships_menu)
+            }
+            display_menu("Membership Purchase Confirmation", buy_membership_info)
+        else:
+            # Proceed with purchasing other memberships
+            membership_service.buy_membership(user.username, plan_name, type_name, price, duration)
+            
+            # Prepare the result information to display in the menu format
+            buy_membership_info = {
+                "Membership successfully purchased for user": (user.username, view_memberships_menu),
+                "Plan": (plan_name, view_memberships_menu),
+                "Type": (type_name, view_memberships_menu),
+                "Price": (f"${price}", view_memberships_menu),
+                "Duration": (duration, view_memberships_menu),
+                0: ("Press 0 to go back to the memberships menu", view_memberships_menu)
+            }
+
+            display_menu("Membership Purchase Confirmation", buy_membership_info)
+
+    else:
+        # If the user does not have any membership, allow them to proceed with purchasing any plan
+        membership_service.buy_membership(user.username, plan_name, type_name, price, duration)
+        
+        # Prepare the result information to display in the menu format
+        buy_membership_info = {
+            "Membership successfully purchased for user": (user.username, view_memberships_menu),
+            "Plan": (plan_name, view_memberships_menu),
+            "Type": (type_name, view_memberships_menu),
+            "Price": (f"${price}", view_memberships_menu),
+            "Duration": (duration, view_memberships_menu),
+            0: ("Press 0 to go back to the memberships menu", view_memberships_menu)
+        }
+
+        # Display the menu for successful purchase
+        display_menu("Membership Purchase Confirmation", buy_membership_info)
 
     # Wait for user input before returning to the membership menu
     input()

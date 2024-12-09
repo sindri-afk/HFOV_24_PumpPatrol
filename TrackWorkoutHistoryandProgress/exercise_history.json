@@ -82,5 +82,12 @@
         "intensity": "ha",
         "timestamp": "2024-12-09T21:38:02.771721",
         "username": "2"
+    },
+    {
+        "exercise": "hip thrust",
+        "duration": "20",
+        "intensity": "high",
+        "timestamp": "2024-12-09T23:01:10.206744",
+        "username": "lara"
     }
 ]

@@ -1,9 +1,9 @@
 [
     {
-        "plan_name": "Full Plan",
-        "type_name": "Pay-As-You-Go",
-        "price": "100.0",
-        "duration": "10 times",
+        "plan_name": "Class Plan",
+        "type_name": "Short-Term",
+        "price": "12.0",
+        "duration": "1 month",
         "username": "2"
     },
     {
@@ -26,5 +26,19 @@
         "price": "Free",
         "duration": "1 week",
         "username": "sunna"
+    },
+    {
+        "plan_name": "Class Plan",
+        "type_name": "Long-Term",
+        "price": "90.0",
+        "duration": "2 years",
+        "username": "lara"
+    },
+    {
+        "plan_name": "Guest Trial",
+        "type_name": "",
+        "price": "Free",
+        "duration": "1 week",
+        "username": "benjamin"
     }
 ]
