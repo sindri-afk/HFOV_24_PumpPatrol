@@ -44,7 +44,7 @@ def view_exercise_history(user, go_back_callback):
     
     # Prepare the exercise details for display
     menu_content = [
-        f"{idx}. {exercise['exercise']} - {exercise['duration']} ({exercise['intensity']}) on {datetime.fromisoformat(exercise.get('timestamp', '1970-01-01T00:00:00')).strftime('%H:%M, %a, %b')}"
+        f"{idx}. {exercise['exercise']} - {exercise['duration']} ({exercise['intensity']}) on {datetime.fromisoformat(exercise.get('timestamp', '1970-01-01T00:00:00')).strftime('%H:%M, %a, %b %d, %Y')}"
         for idx, exercise in enumerate(sorted_exercises, start=1)
     ]
     
