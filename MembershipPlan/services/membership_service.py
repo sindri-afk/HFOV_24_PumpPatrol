@@ -1,34 +1,64 @@
-from ..repositories.membership_repository import MembershipRepository
-from SignInUp.repositories.user_repository import UserRepository
+import json
 
 class MembershipService:
     def __init__(self):
-        self.repository = MembershipRepository()
-        self.user_repository = UserRepository()
+        self.membership_file = "MembershipPlan/data/membership.json"  # Make sure the file path is correct
 
-    def view_memberships(self):
-        return self.repository.get_all_memberships()
+    def get_user_membership(self, username):
+        try:
+            # Load the existing membership data from the file
+            with open(self.membership_file, "r") as f:
+                memberships = json.load(f)
+                
+                # Filter memberships by username
+                user_membership = next((m for m in memberships if m["username"] == username), None)
+                
+                if user_membership:
+                    print(f"Your current membership plan: {user_membership['plan_name']} - ${user_membership['price']}, {user_membership['duration']}.")
+                    return user_membership
+                else:
+                    print(f"You have not purchased a membership plan yet!")
+                    return None
+        except Exception as e:
+            print(f"Error loading memberships: {e}")
+            return None
 
-    def buy_membership(self, user_id, plan_id):
-        membership = self.repository.get_membership_by_id(plan_id)
+    def is_not_membership(self, username):
+        """Check if the user has no membership."""
+        user_membership = self.get_user_membership(username)
+        if user_membership is None:
+            return True
+        return False
 
-        users = self.user_repository.load_users()
-        user = next((u for u in users if u.user_id == user_id), None)
+    def buy_membership(self, username, plan_name, type_name, price, duration):
+        try:
+            with open(self.membership_file, "r") as f:
+                memberships = json.load(f)
 
-        user.membership_id = plan_id
-        self.user_repository.save_users(users)
+            # Check if the user already has a membership
+            existing_membership = next((m for m in memberships if m['username'] == username), None)
 
-        print(f"You have successfully purchased the ${membership.price} {membership.name} for {membership.duration}!")
+            if existing_membership:
+                print(f"{username} already has a membership. Upgrading...")
+                existing_membership['plan_name'] = plan_name
+                existing_membership['type_name'] = type_name
+                existing_membership['price'] = price
+                existing_membership['duration'] = duration
+            else:
+                print(f"{username} is purchasing a new membership.")
+                # Add a new membership for the user
+                memberships.append({
+                    "plan_name": plan_name,
+                    "type_name": type_name,
+                    "price": price,
+                    "duration": duration,
+                    "username": username
+                })
 
-    def get_user_membership(self, user_id):
-        users = self.user_repository.load_users()
-        user = next((u for u in users if u.user_id == user_id), None)
-
-        membership = self.repository.get_membership_by_id(user.membership_id)
-        
-        if user.membership_id != 0:
-            print(f"Your current membership plan: {membership.name} - ${membership.price}, {membership.duration}.")
-        else:
-            print(f"You have not purchased a membership plan yet!")
-    
-        
+            # Save the updated membership list to the file
+            with open(self.membership_file, "w") as f:
+                json.dump(memberships, f, indent=4)
+                
+            print(f"Membership successfully updated: {plan_name} - ${price} for {duration}.")
+        except Exception as e:
+            print(f"Error purchasing membership: {e}")

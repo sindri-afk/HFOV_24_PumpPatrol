@@ -1,32 +1,23 @@
 [
     {
-        "plan_id": 1,
-        "name": "Short-Term Plan - Basic",
+        "plan_name": "Gym Plan",
+        "type_name": "Short-Term",
         "price": 20.0,
-        "duration": "1 month"
+        "duration": "1 month",
+        "username": "benja"
     },
     {
-        "plan_id": 2,
-        "name": "Short-Term Plan - Premium",
-        "price": 35.0,
-        "duration": "1 month"
-    },
-    {
-        "plan_id": 3,
-        "name": "Long-Term Plan - Basic",
+        "plan_name": "Class Plan",
+        "type_name": "Long-Term",
         "price": 200.0,
-        "duration": "1 year"
+        "duration": "1 year",
+        "username": "oliver"
     },
     {
-        "plan_id": 4,
-        "name": "Long-Term Plan - Premium",
-        "price": 350.0,
-        "duration": "1 year"
-    },
-    {
-        "plan_id": 5,
-        "name": "Guest Trial - Premium",
-        "price": 0,
-        "duration": "1 week"
+        "plan_name": "Gym Plan",
+        "type_name": "Long-Term",
+        "price": "70.0",
+        "duration": "1 year",
+        "username": "2"
     }
 ]
