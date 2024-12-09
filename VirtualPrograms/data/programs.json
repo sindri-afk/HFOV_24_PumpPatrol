@@ -8,36 +8,36 @@
     {
         "program id": 2,
         "program name": "Chest",
-        "program description": "1. Wide Push-Ups\nPlace hands wider than shoulder-width to target the chest.\n• Reps: 10–15 (modify with knees down if needed)\n• Sets: 3\n2. Incline Push-Ups (on a stable surface like a couch or bed)\n• Target upper chest.\n• Reps: 10–15\n• Sets: 3\n3. Chest Squeezes\n• Press palms together in front of your chest and squeeze tightly.\n• Hold: 10 seconds\n• Reps: 10–15\n• Sets: 3"
+        "program description": "1. Wide Push-Ups\nPlace hands wider than shoulder-width to target the chest.\n- Reps: 10–15 (modify with knees down if needed)\n- Sets: 3\n2. Incline Push-Ups (on a stable surface like a couch or bed)\n- Target upper chest.\n- Reps: 10–15\n- Sets: 3\n3. Chest Squeezes\n- Press palms together in front of your chest and squeeze tightly.\n- Hold: 10 seconds\n- Reps: 10–15\n- Sets: 3"
     },
 
     {
         "program id": 3,
         "program name": "Back",
-        "program description": "1. Superman Hold\n• Lay on your stomach, lift arms, chest, and legs off the ground.\n• Hold: 20–30 seconds\n• Sets: 3\n2. Reverse Snow Angels\n• Lay on your stomach, lift arms and legs, and mimic a snow angel motion.\n• Reps: 10–12\n• Sets: 3\n3. Plank Rows\n• In a plank position, lift one hand towards your chest as if rowing.\n• Reps: 10 per side\n• Sets: 3"
+        "program description": "1. Superman Hold\n- Lay on your stomach, lift arms, chest, and legs off the ground.\n- Hold: 20–30 seconds\n- Sets: 3\n2. Reverse Snow Angels\n- Lay on your stomach, lift arms and legs, and mimic a snow angel motion.\n- Reps: 10–12\n- Sets: 3\n3. Plank Rows\n- In a plank position, lift one hand towards your chest as if rowing.\n- Reps: 10 per side\n- Sets: 3"
     },
 
     {
         "program id": 4,
         "program name": "Legs",
-        "program description": "1. Bodyweight Squats\n• Stand with feet shoulder-width apart, lower until thighs are parallel to the floor.\n• Reps: 10–15\n• Sets: 3\n2. Lunges\n• Step forward with one leg, lower until both knees are at 90 degrees, and return. Alternate legs.\n• Reps: 10 per leg\n• Sets: 3\n3. Wall Sit\n• Lean against a wall with knees bent at 90 degrees, as if sitting on an invisible chair.\n• Hold: 20–30 seconds\n• Sets: 3\n4. Calf Raises\n• Stand on your toes, then slowly lower your heels.\n• Reps: 15–20\n• Sets: 3"
+        "program description": "1. Bodyweight Squats\n- Stand with feet shoulder-width apart, lower until thighs are parallel to the floor.\n- Reps: 10–15\n- Sets: 3\n2. Lunges\n- Step forward with one leg, lower until both knees are at 90 degrees, and return. Alternate legs.\n- Reps: 10 per leg\n- Sets: 3\n3. Wall Sit\n- Lean against a wall with knees bent at 90 degrees, as if sitting on an invisible chair.\n- Hold: 20–30 seconds\n- Sets: 3\n4. Calf Raises\n- Stand on your toes, then slowly lower your heels.\n- Reps: 15–20\n- Sets: 3"
     },
 
     {
         "program id": 5,
         "program name": "Shoulders",
-        "program description": "1. Pike Push-Ups\n• Assume a pike position and lower your head towards the ground.\n• Reps: 10–12\n• Sets: 3\n2. Shoulder Taps (in plank)\n• Tap each shoulder alternately while holding a plank.\n• Reps: 20 taps (10 per side)\n• Sets: 3\n3. Wall Push-Ups\n• Stand at arm’s length from a wall and push off.\n• Reps: 10–15\n• Sets: 3"
+        "program description": "1. Pike Push-Ups\n- Assume a pike position and lower your head towards the ground.\n- Reps: 10–12\n- Sets: 3\n2. Shoulder Taps (in plank)\n- Tap each shoulder alternately while holding a plank.\n- Reps: 20 taps (10 per side)\n- Sets: 3\n3. Wall Push-Ups\n- Stand at arm’s length from a wall and push off.\n- Reps: 10–15\n- Sets: 3"
     },
 
     {
         "program id": 6,
         "program name": "Abs",
-        "program description": "1. Plank\n• Hold a forearm or high plank position.\n• Duration: 30–60 seconds\n• Sets: 3\n2. Bicycle Crunches\n• Alternate bringing opposite elbow to knee.\n• Reps: 15–20 per side\n• Sets: 3\n3. Flutter Kicks\n• Lay on your back, keep legs straight, and alternate small kicks.\n• Duration: 20–30 seconds\n• Sets: 3"
+        "program description": "1. Plank\n- Hold a forearm or high plank position.\n- Duration: 30–60 seconds\n- Sets: 3\n2. Bicycle Crunches\n- Alternate bringing opposite elbow to knee.\n- Reps: 15–20 per side\n- Sets: 3\n3. Flutter Kicks\n- Lay on your back, keep legs straight, and alternate small kicks.\n- Duration: 20–30 seconds\n- Sets: 3"
     },
 
     {
         "program id": 7,
         "program name": "Full Body",
-        "program description": "1. Burpees\n• Start standing, drop to a push-up, and jump back up.\n• Reps: 10–15\n• Sets: 3\n2. Mountain Climbers\n• In a plank position, bring knees alternately to the chest.\n• Duration: 20–30 seconds\n• Sets: 3\n3. Jumping Jacks\n• Standard full-body cardio exercise.\n• Duration: 30–60 seconds\n• Sets: 3"
+        "program description": "1. Burpees\n- Start standing, drop to a push-up, and jump back up.\n- Reps: 10–15\n- Sets: 3\n2. Mountain Climbers\n- In a plank position, bring knees alternately to the chest.\n- Duration: 20–30 seconds\n- Sets: 3\n3. Jumping Jacks\n- Standard full-body cardio exercise.\n- Duration: 30–60 seconds\n- Sets: 3"
     }
 ]

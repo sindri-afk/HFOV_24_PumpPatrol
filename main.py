@@ -49,7 +49,7 @@ def display_workout_program(workouts):
         print(f"Program Name: {workout.program_name}\n")
         print(f"Description:\n{workout.program_description}\n")
     input("Press Enter to go back to the menu.")
-    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", user_main_menu)
+    view_virtual_workout_programs()
 
 
 def view_virtual_workout_programs():
