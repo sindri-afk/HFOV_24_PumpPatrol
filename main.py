@@ -89,25 +89,42 @@ def book_classes(classes):
     }
     display_menu("Classes", menu_options)
 
+# def view_classes():
+#     classes = class_repo.load_classes()
+#     for i, c in enumerate(classes, 1):
+#         print(f"{i}. {c.name} - {c.date_time}")
+#         print()
+#     input("Press Enter to go back to the menu.")
+#     display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
+
+
+
+# def display_classes():
+#     classes = class_repo.load_classes()
+#     menu_options = {
+#         i: (c.name, lambda c=c: book_classes([c]))
+#         for i, c in enumerate(classes, 1)
+#     }
+#     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
+#     display_menu("Classes", menu_options)
+
 def view_classes():
     classes = class_repo.load_classes()
-    for i, c in enumerate(classes, 1):
-        print(f"{i}. {c.name} - {c.date_time}")
-        print()
-    input("Press Enter to go back to the menu.")
-    display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
-
-
-
-def display_classes():
-    classes = class_repo.load_classes()
     menu_options = {
-        i: (c.name, lambda c=c: book_classes([c]))
+        i: (c.name, lambda c=c: display_classes([c]))
         for i, c in enumerate(classes, 1)
     }
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Classes", menu_options)
 
+def display_classes(classes):
+    for c in classes:
+        print(f"Class Name: {c.name}\n")
+        print(f"Description:\n{c.description}\n")
+        print(f"Capacity: {c.capacity}\n")
+        print(f"Date and Time: {c.date_time}\n")
+    input("Press Enter to go back to the menu.")
+    view_classes()
 
 
 
