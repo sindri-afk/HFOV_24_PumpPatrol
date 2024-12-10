@@ -27,9 +27,6 @@ class ClassService:
             raise ValueError("You have already booked this class!")
 
         user.classes.append(class_id)
-        class_to_book.capacity -= 1
-
         self.user_repository.save_users(users)
-        self.class_repository.save_class(class_to_book)
 
         print(f"You have successfully booked class {class_to_book.name}")

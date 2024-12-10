@@ -1,58 +1,9 @@
 [
     {
         "class_id": 1,
-        "name": "sig",
-        "description": "ja",
-        "capacity": 23,
-        "date_time": "fa"
-    },
-    {
-        "class_id": 2,
-        "name": "1",
-        "description": "1",
-        "capacity": 1,
-        "date_time": "1"
-    },
-    {
-        "class_id": 3,
-        "name": "a",
-        "description": "a",
-        "capacity": 1,
-        "date_time": "w"
-    },
-    {
-        "class_id": 4,
-        "name": "sig",
-        "description": "ja",
-        "capacity": 22,
-        "date_time": "fa"
-    },
-    {
-        "class_id": 5,
-        "name": "gimme dat",
-        "description": "gi",
-        "capacity": 23,
-        "date_time": "afa"
-    },
-    {
-        "class_id": 1,
-        "name": "sig",
-        "description": "ja",
-        "capacity": 22,
-        "date_time": "fa"
-    },
-    {
-        "class_id": 2,
-        "name": "1",
-        "description": "1",
-        "capacity": 0,
-        "date_time": "1"
-    },
-    {
-        "class_id": 5,
-        "name": "gimme dat",
-        "description": "gi",
-        "capacity": 22,
-        "date_time": "afa"
+        "name": "Spinning",
+        "description": "Sike were not spinning",
+        "capacity": 10,
+        "date_time": "2024-12-24 18:00"
     }
 ]
