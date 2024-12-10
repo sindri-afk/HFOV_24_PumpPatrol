@@ -146,12 +146,16 @@ def display_classes(classes):
     while True:
         user_input = input("Do you want to book this class? (y/n): ").strip().lower()
         if user_input == "y":
+            if c.class_id in user.classes:
+                print("You have already booked this class!")
+                time.sleep(2)
+                view_classes()
             book_class(c.class_id)
             return
         
         elif user_input == "n":
-            return
-        
+            view_classes()
+
         else: 
             print("Invalid input, please enter either 'y' or 'n'!")
             continue

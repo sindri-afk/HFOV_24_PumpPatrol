@@ -33,5 +33,26 @@
         "description": "gi",
         "capacity": 23,
         "date_time": "afa"
+    },
+    {
+        "class_id": 1,
+        "name": "sig",
+        "description": "ja",
+        "capacity": 22,
+        "date_time": "fa"
+    },
+    {
+        "class_id": 2,
+        "name": "1",
+        "description": "1",
+        "capacity": 0,
+        "date_time": "1"
+    },
+    {
+        "class_id": 5,
+        "name": "gimme dat",
+        "description": "gi",
+        "capacity": 22,
+        "date_time": "afa"
     }
 ]
