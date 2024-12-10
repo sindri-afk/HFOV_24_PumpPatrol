@@ -1,30 +1,13 @@
 [
     {
         "user_id": 1,
-        "username": "g",
-        "password_hash": "cd0aa9856147b6c5b4ff2b7dfee5da20aa38253099ef1b4a64aced233c9afe29",
-        "membership_id": null,
-        "trainer": "n"
-    },
-    {
-        "user_id": 2,
-        "username": "benja",
-        "password_hash": "a3e690053061793bb12ad4c32aace5856f57f1694d3608df1379d240ce1bbc5b",
-        "membership_id": null,
-        "trainer": "n"
-    },
-    {
-        "user_id": 3,
-        "username": "Olli",
-        "password_hash": "333e0a1e27815d0ceee55c473fe3dc93d56c63e3bee2b3b4aee8eed6d70191a3",
-        "membership_id": null,
-        "trainer": "y"
-    },
-    {
-        "user_id": 4,
-        "username": "freyr",
-        "password_hash": "2f32b6d8449e0f03dbeb03f6c6082fae1d8e0cdaed601cadd40d48620a7aed01",
-        "membership_id": null,
-        "trainer": "n"
+        "username": "grog",
+        "password_hash": "38de90475bb334fb3dea5d54f250500aba60fe2c6158115d342b06bcb46e39bf",
+        "membership_id": 3,
+        "trainer": "y",
+        "classes": [
+            1,
+            5
+        ]
     }
 ]

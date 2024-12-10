@@ -5,6 +5,7 @@ from Classes.controllers.class_controller import ClassController
 from VirtualPrograms.services.virtualworkout_service import VirtualWorkoutService
 from TrackWorkoutHistoryandProgress.workout_controller import track_exercise, view_exercise_history
 from Classes.repository.class_repository import ClassRepository
+from Classes.services.class_service import ClassService
 
 from display import display_menu
 
@@ -15,6 +16,7 @@ membership_service = MembershipService()
 class_controller = ClassController()
 workouts = VirtualWorkoutService()
 class_repo = ClassRepository()
+class_service = ClassService()
 
 
 def correct_main_menu():
@@ -32,7 +34,6 @@ def view_memberships():
     menu_options[len(menu_options) + 1] = ("Membership Plans Information", lambda: display_menu("Membership Information", membership_info))
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Memberships", menu_options)
-
 
 def buy_membership(plan_id):
     global user
@@ -71,23 +72,28 @@ def track_workout_history_and_progress(user):
     }
     display_menu("Workout History and Progress", workout_menu)
 
+def book_class(class_id):
+    global user
+    class_service.book_class(user.user_id, class_id) # Handled by MembershipService
+    time.sleep(4)
+    display_menu("City Gym Hub", correct_main_menu())
 
-# fix later
-def book_classes(classes):
-    if not classes:
-        print("No classes available.")
-        return
+# # fix later
+# def book_classes(classes):
+#     if not classes:
+#         print("No classes available.")
+#         return
 
-    print("Classes:")
-    for i, c in enumerate(classes, 1):
-        print(f"{i}. {c.name} - {c.date_time}")
-        print(f"Description: {c.description}")
-    print()
-    menu_options = {
-        1: ("Book Class", None),
-        2: ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
-    }
-    display_menu("Classes", menu_options)
+#     print("Classes:")
+#     for i, c in enumerate(classes, 1):
+#         print(f"{i}. {c.name} - {c.date_time}")
+#         print(f"Description: {c.description}")
+#     print()
+#     menu_options = {
+#         1: ("Book Class", None),
+#         2: ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
+#     }
+#     display_menu("Classes", menu_options)
 
 # def view_classes():
 #     classes = class_repo.load_classes()
@@ -117,16 +123,38 @@ def view_classes():
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Classes", menu_options)
 
+# def display_classes(classes):
+#     for c in classes:
+#         print(f"Class Name: {c.name}\n")
+#         print(f"Description:\n{c.description}\n")
+#         print(f"Capacity: {c.capacity}\n")
+#         print(f"Date and Time: {c.date_time}\n")
+
+#     user_input = input("Book class (y/n)?")
+#     if user_input == "y":
+#         book_class(c.class_id)
+#     view_classes()
+
 def display_classes(classes):
     for c in classes:
-        print(f"Class Name: {c.name}\n")
-        print(f"Description:\n{c.description}\n")
-        print(f"Capacity: {c.capacity}\n")
-        print(f"Date and Time: {c.date_time}\n")
-    input("Press Enter to go back to the menu.")
-    view_classes()
+        print(f"Class Name: {c.name}")
+        print(f"Description: {c.description}")
+        print(f"Capacity: {c.capacity}")
+        print(f"Date and Time: {c.date_time}")
+        print()
 
-
+    while True:
+        user_input = input("Do you want to book this class? (y/n): ").strip().lower()
+        if user_input == "y":
+            book_class(c.class_id)
+            return
+        
+        elif user_input == "n":
+            return
+        
+        else: 
+            print("Invalid input, please enter either 'y' or 'n'!")
+            continue
 
 def sign_up():
     auth_controller.sign_up()  
@@ -163,7 +191,7 @@ user_main_menu = {
     1: ("View All Membership Plans", view_memberships),
     2: ("View Your Membership Plan", view_current_membership_plan),
     3: ("View Virtual Workout Programs", view_virtual_workout_programs),
-    4: ("View Classes", view_classes),
+    4: ("View and Book Classes", view_classes),
     5: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
     6: ("Exit", None),
 }
@@ -172,9 +200,10 @@ trainer_main_menu = {
     1: ("View All Membership Plans", view_memberships),
     2: ("View Your Membership Plan", view_current_membership_plan),
     3: ("View Virtual Workout Programs", view_virtual_workout_programs),
-    4: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
-    5: ("Create Class", create_class), 
-    6: ("Exit", None),
+    4: ("View and Book Classes", view_classes),
+    5: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
+    6: ("Create Class", create_class), 
+    7: ("Exit", None),
 }
 
 membership_info = {
