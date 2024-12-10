@@ -1,0 +1,100 @@
+[
+    {
+        "exercise": "flying",
+        "duration": "30 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:01:54.301847",
+        "username": ""
+    },
+    {
+        "exercise": "hlaupa",
+        "duration": "1 minute",
+        "intensity": "Light",
+        "timestamp": "2024-12-09T10:03:29.604091",
+        "username": ""
+    },
+    {
+        "exercise": "bench press",
+        "duration": "100 minutes",
+        "intensity": "Moderate",
+        "timestamp": "2024-12-09T10:03:51.955532",
+        "username": ""
+    },
+    {
+        "exercise": "hlaupa",
+        "duration": "30 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:48:06.314307",
+        "username": "g"
+    },
+    {
+        "exercise": "handahlaup",
+        "duration": "29 minutes",
+        "intensity": "light",
+        "timestamp": "2024-12-09T10:48:19.554832",
+        "username": "g"
+    },
+    {
+        "exercise": "hahahah",
+        "duration": "15 minutes",
+        "intensity": "Moderate",
+        "timestamp": "2024-12-09T10:53:05.368751",
+        "username": "g"
+    },
+    {
+        "exercise": "bicep curls",
+        "duration": "10 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:53:44.616789",
+        "username": "benja"
+    },
+    {
+        "exercise": "pump patrol exercuse",
+        "duration": "30 minutes",
+        "intensity": "Moderate",
+        "timestamp": "2024-12-09T10:54:03.420804",
+        "username": "benja"
+    },
+    {
+        "exercise": "Olla \u00e6fing",
+        "duration": "600 minutes",
+        "intensity": "High",
+        "timestamp": "2024-12-09T10:59:51.591034",
+        "username": "Olli"
+    },
+    {
+        "exercise": "",
+        "duration": "",
+        "intensity": "",
+        "timestamp": "2024-12-09T21:26:13.374424",
+        "username": "2"
+    },
+    {
+        "exercise": "hoppa",
+        "duration": "2 min",
+        "intensity": "High",
+        "timestamp": "2024-12-09T21:37:28.956682",
+        "username": "2"
+    },
+    {
+        "exercise": "nei ha",
+        "duration": "wtf",
+        "intensity": "ha",
+        "timestamp": "2024-12-09T21:38:02.771721",
+        "username": "2"
+    },
+    {
+        "exercise": "hip thrust",
+        "duration": "20",
+        "intensity": "high",
+        "timestamp": "2024-12-09T23:01:10.206744",
+        "username": "lara"
+    },
+    {
+        "exercise": "",
+        "duration": "",
+        "intensity": "",
+        "timestamp": "2024-12-10T10:05:36.904388",
+        "username": "2"
+    }
+]
