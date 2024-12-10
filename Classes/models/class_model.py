@@ -1,9 +1,7 @@
-import uuid
-
 
 class ClassModel:
-    def __init__(self, name, description, capacity, date_time):
-        self.class_id = str(uuid.uuid4())
+    def __init__(self, class_id, name, description, capacity, date_time):
+        self.class_id = class_id
         self.name = name
         self.description = description
         self.capacity = capacity
@@ -21,6 +19,7 @@ class ClassModel:
     @staticmethod
     def from_dict(data):
         return ClassModel(
+            class_id=data["class_id"],
             name=data["name"],
             date_time=data["date_time"],
             description=data["description"],
