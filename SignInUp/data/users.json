@@ -16,17 +16,6 @@
         "password_hash": "e96e02d8e47f2a7c03be5117b3ed175c52aa30fb22028cf9c96f261563577605",
         "membership_id": 0,
         "trainer": "n",
-        "classes": [
-            1,
-            2
-        ]
-    },
-    {
-        "user_id": 2,
-        "username": "olitrainer",
-        "password_hash": "e96e02d8e47f2a7c03be5117b3ed175c52aa30fb22028cf9c96f261563577605",
-        "membership_id": 0,
-        "trainer": "y",
         "classes": []
     }
 ]
