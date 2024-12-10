@@ -29,4 +29,4 @@ class ClassService:
         user.classes.append(class_id)
         self.user_repository.save_users(users)
 
-        print(f"You have successfully booked class {class_to_book.name}")
+        print(f"You have successfully booked class: {class_to_book.name}")
