@@ -12,5 +12,12 @@
         "description": "real pump shit",
         "capacity": 69,
         "date_time": "2024-12-15 16:30"
+    },
+    {
+        "class_id": 3,
+        "name": "Pump Shalini",
+        "description": "pumping weight with Shalini*",
+        "capacity": 2,
+        "date_time": "2024-12-12 20:30"
     }
 ]

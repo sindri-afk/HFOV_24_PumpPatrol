@@ -17,5 +17,16 @@
         "membership_id": 0,
         "trainer": "n",
         "classes": []
+    },
+    {
+        "user_id": 3,
+        "username": "2",
+        "password_hash": "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35",
+        "membership_id": 0,
+        "trainer": "y",
+        "classes": [
+            1,
+            2
+        ]
     }
 ]

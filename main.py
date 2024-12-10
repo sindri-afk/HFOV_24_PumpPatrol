@@ -1,8 +1,10 @@
 import time
 from SignInUp.controllers.auth_controller import AuthController
 from MembershipPlan.services.membership_service import MembershipService
-from CreateClass.controllers.class_controller import ClassController  
+from Classes.controllers.class_controller import ClassController  
 from VirtualPrograms.services.virtualworkout_service import VirtualWorkoutService
+from Classes.repository.class_repository import ClassRepository
+from Classes.services.class_service import ClassService
 from TrackWorkoutHistoryandProgress.workout_controller import track_exercise, view_exercise_history
 
 from display import display_menu
@@ -13,12 +15,64 @@ auth_controller = AuthController()
 membership_service = MembershipService()
 class_controller = ClassController()
 workouts = VirtualWorkoutService()
+class_repo = ClassRepository()
+class_service = ClassService()
 
 
 def correct_main_menu():
     if user and user.trainer == "y":
         return trainer_main_menu
     return user_main_menu
+
+def book_class(class_id):
+    global user
+    class_service.book_class(user.user_id, class_id)
+    # Refresh the user data from the repository
+    users = class_service.user_repository.load_users()
+    user = next((u for u in users if u.user_id == user.user_id), None)
+    time.sleep(2)
+    display_menu("City Gym Hub", correct_main_menu())
+
+
+def view_classes():
+    classes = class_repo.load_classes()
+    menu_options = {
+        i: ((str(c.name) + ' ----- ' + str(c.date_time)), lambda c=c: display_classes([c]))
+        for i, c in enumerate(classes, 1)
+    }
+    menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
+    display_menu("Classes", menu_options)
+
+
+def display_classes(classes):
+    for c in classes:
+        print(f"Class Name: {c.name}")
+        print(f"Description: {c.description}")
+        print(f"Capacity: {c.capacity}")
+        print(f"Date and Time: {c.date_time}")
+        print()
+
+    while True:
+        # loaded_classes = class_repo.load_classes()
+        user_input = input("Do you want to book this class? (y/n): ").strip().lower()
+        if user_input == "y":
+            if c.class_id in user.classes:
+                print("You have already booked this class!")
+                time.sleep(2)
+                view_classes()
+                break
+            book_class(c.class_id)
+            break
+        
+        elif user_input == "n":
+            print("Booking cancelled!")
+            time.sleep(2)
+            view_classes()
+            break
+
+        else: 
+            print("Invalid input, please enter either 'y' or 'n'!")
+            continue
 
 
 def view_memberships():
@@ -320,7 +374,8 @@ user_main_menu = {
     1: ("Memberships", view_memberships_menu),
     2: ("View Virtual Workout Programs", view_virtual_workout_programs),
     3: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
-    4: ("Exit", None),
+    4: ("View and Book Classes", view_classes),
+    5: ("Exit", None),
 }
 
 
@@ -328,8 +383,9 @@ trainer_main_menu = {
     1: ("Memberships", view_memberships_menu),
     2: ("View Virtual Workout Programs", view_virtual_workout_programs),
     3: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
-    4: ("Create Class", create_class), 
-    5: ("Exit", None),
+    4: ("View and Book Classes", view_classes),
+    5: ("Create Class", create_class), 
+    6: ("Exit", None),
 }
 
 def main():
