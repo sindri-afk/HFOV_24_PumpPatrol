@@ -61,5 +61,12 @@
         "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "membership_id": 0,
         "trainer": "y"
+    },
+    {
+        "user_id": 10,
+        "username": "oli",
+        "password_hash": "e96e02d8e47f2a7c03be5117b3ed175c52aa30fb22028cf9c96f261563577605",
+        "membership_id": 0,
+        "trainer": "y"
     }
 ]

@@ -326,10 +326,10 @@ user_main_menu = {
 
 trainer_main_menu = {
     1: ("Memberships", view_memberships_menu),
-    3: ("View Virtual Workout Programs", view_virtual_workout_programs),
-    4: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
-    5: ("Create Class", create_class), 
-    6: ("Exit", None),
+    2: ("View Virtual Workout Programs", view_virtual_workout_programs),
+    3: ("Track Workout History and Progress", lambda: track_workout_history_and_progress(user)),
+    4: ("Create Class", create_class), 
+    5: ("Exit", None),
 }
 
 def main():
