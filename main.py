@@ -30,9 +30,9 @@ def book_class(class_id):
     # Refresh the user data from the repository
     users = class_service.user_repository.load_users()
     user = next((u for u in users if u.user_id == user.user_id), None)
-    time.sleep(2)
-    display_menu("City Gym Hub", correct_main_menu())
-
+    time.sleep(1)
+    input("Press any key to continue... ")
+    view_classes()
 
 def view_classes():
     classes = class_repo.load_classes()
@@ -58,7 +58,8 @@ def display_classes(classes):
         if user_input == "y":
             if c.class_id in user.classes:
                 print("You have already booked this class!")
-                time.sleep(2)
+                time.sleep(1)
+                input("Press any key to continue... ")
                 view_classes()
                 break
             book_class(c.class_id)
@@ -66,7 +67,8 @@ def display_classes(classes):
         
         elif user_input == "n":
             print("Booking cancelled!")
-            time.sleep(2)
+            time.sleep(1)
+            input("Press any key to continue... ")
             view_classes()
             break
 
@@ -345,7 +347,8 @@ def sign_in():
 
 def create_class():
     class_controller.create_class()
-    time.sleep(2)
+    time.sleep(1)
+    input("Press any key to continue... ")
     display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
 
 
