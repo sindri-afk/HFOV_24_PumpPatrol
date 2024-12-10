@@ -241,11 +241,16 @@ def print_membership_info():
     display_menu("Membership Information", membership_info)
 
 def display_workout_program(workouts):
-    for workout in workouts:
-        print(f"Program Name: {workout.program_name}\n")
-        print(f"Description:\n{workout.program_description}\n")
-    input("Press Enter to go back to the menu.")
-    view_virtual_workout_programs()
+    menu_options = {}
+    for i, workout in enumerate(workouts, 1):
+        # Replace '-' with a newline followed by '-' for better formatting
+        formatted_description = workout.program_description.replace("-", "\n-").strip()
+        menu_options[i] = (
+            f"{workout.program_name}\n{formatted_description}",
+            view_virtual_workout_programs
+        )
+    menu_options[len(menu_options) - 1] = ("Go back", view_virtual_workout_programs)
+    display_menu("Workout Program Details", menu_options)
 
 
 def view_virtual_workout_programs():
