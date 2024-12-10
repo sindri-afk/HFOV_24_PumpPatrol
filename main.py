@@ -78,41 +78,6 @@ def book_class(class_id):
     time.sleep(4)
     display_menu("City Gym Hub", correct_main_menu())
 
-# # fix later
-# def book_classes(classes):
-#     if not classes:
-#         print("No classes available.")
-#         return
-
-#     print("Classes:")
-#     for i, c in enumerate(classes, 1):
-#         print(f"{i}. {c.name} - {c.date_time}")
-#         print(f"Description: {c.description}")
-#     print()
-#     menu_options = {
-#         1: ("Book Class", None),
-#         2: ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
-#     }
-#     display_menu("Classes", menu_options)
-
-# def view_classes():
-#     classes = class_repo.load_classes()
-#     for i, c in enumerate(classes, 1):
-#         print(f"{i}. {c.name} - {c.date_time}")
-#         print()
-#     input("Press Enter to go back to the menu.")
-#     display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu())
-
-
-
-# def display_classes():
-#     classes = class_repo.load_classes()
-#     menu_options = {
-#         i: (c.name, lambda c=c: book_classes([c]))
-#         for i, c in enumerate(classes, 1)
-#     }
-#     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
-#     display_menu("Classes", menu_options)
 
 def view_classes():
     classes = class_repo.load_classes()
@@ -123,17 +88,6 @@ def view_classes():
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
     display_menu("Classes", menu_options)
 
-# def display_classes(classes):
-#     for c in classes:
-#         print(f"Class Name: {c.name}\n")
-#         print(f"Description:\n{c.description}\n")
-#         print(f"Capacity: {c.capacity}\n")
-#         print(f"Date and Time: {c.date_time}\n")
-
-#     user_input = input("Book class (y/n)?")
-#     if user_input == "y":
-#         book_class(c.class_id)
-#     view_classes()
 
 def display_classes(classes):
     for c in classes:
@@ -150,8 +104,9 @@ def display_classes(classes):
                 print("You have already booked this class!")
                 time.sleep(2)
                 view_classes()
+                break
             book_class(c.class_id)
-            return
+            break
         
         elif user_input == "n":
             view_classes()

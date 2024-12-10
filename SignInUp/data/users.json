@@ -14,7 +14,8 @@
         "membership_id": 0,
         "trainer": "n",
         "classes": [
-            1
+            1,
+            2
         ]
     },
     {
