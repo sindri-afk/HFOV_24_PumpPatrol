@@ -117,7 +117,7 @@ def book_class(class_id):
 def view_classes():
     classes = class_repo.load_classes()
     menu_options = {
-        i: (c.name, lambda c=c: display_classes([c]))
+        i: ((str(c.name) + ' ----- ' + str(c.date_time)), lambda c=c: display_classes([c]))
         for i, c in enumerate(classes, 1)
     }
     menu_options[len(menu_options) + 1] = ("Go back", lambda: display_menu(f"{(user.username).capitalize()}'s City Gym Hub", correct_main_menu()))
