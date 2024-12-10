@@ -74,8 +74,11 @@ def track_workout_history_and_progress(user):
 
 def book_class(class_id):
     global user
-    class_service.book_class(user.user_id, class_id) # Handled by MembershipService
-    time.sleep(4)
+    class_service.book_class(user.user_id, class_id)
+    # Refresh the user data from the repository
+    users = class_service.user_repository.load_users()
+    user = next((u for u in users if u.user_id == user.user_id), None)
+    time.sleep(2)
     display_menu("City Gym Hub", correct_main_menu())
 
 
@@ -98,6 +101,7 @@ def display_classes(classes):
         print()
 
     while True:
+        # loaded_classes = class_repo.load_classes()
         user_input = input("Do you want to book this class? (y/n): ").strip().lower()
         if user_input == "y":
             if c.class_id in user.classes:
@@ -109,7 +113,10 @@ def display_classes(classes):
             break
         
         elif user_input == "n":
+            print("Booking cancelled!")
+            time.sleep(2)
             view_classes()
+            break
 
         else: 
             print("Invalid input, please enter either 'y' or 'n'!")
