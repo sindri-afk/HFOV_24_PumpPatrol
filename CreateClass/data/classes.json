@@ -1,34 +1,41 @@
 [
     {
-        "class_id": "e00ed346-77f0-4910-b2d5-2cf5f46462ab",
+        "class_id": "6a99fb37-2a03-43c2-ae6a-6f324ee6f01d",
         "name": "shabsing",
         "description": "freybux naky",
         "capacity": 2,
         "date_time": "2024"
     },
     {
-        "class_id": "20fab095-934e-421d-b798-8f047f8aeaee",
+        "class_id": "f40536e1-b386-49d1-bada-afc26f4a4163",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "de66f58f-7e1d-4687-ba95-26c3f1d64308",
+        "class_id": "1ec0958f-16c9-4ccc-8292-0a574c987333",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "6e214c42-b840-4cb8-873f-25b977488c6b",
+        "class_id": "7e7a95a6-a94b-4cd2-a010-a8072200db56",
         "name": "1",
         "description": "1",
         "capacity": 1,
         "date_time": "1"
     },
     {
-        "class_id": "34db7dc5-f3bd-4bdb-9f8d-242b4bee63ff",
+        "class_id": "be4c306d-ec22-4aa1-b34e-2fc9da896740",
+        "name": "1",
+        "description": "1",
+        "capacity": 1,
+        "date_time": "1"
+    },
+    {
+        "class_id": "f8c52756-2573-43d9-bdf3-a7f7d3f160cf",
         "name": "1",
         "description": "1",
         "capacity": 1,
