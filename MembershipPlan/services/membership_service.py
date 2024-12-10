@@ -93,5 +93,4 @@ class MembershipService:
             print(f"Your current membership plan: {user_membership['plan_name']} - {user_membership['type_name']} - ${user_membership['price']} for {user_membership['duration']}.")
             return user_membership
         else:
-            print(f"You have not purchased a membership plan yet!")
             return None

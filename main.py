@@ -157,7 +157,12 @@ def view_current_membership_plan():
         }
         display_menu("Your Current Membership Plan", current_membership_plan_info)
     else:
-        print("You have not purchased a membership plan yet!")
+        no_plan = {
+            "Plan": ("You have not purchased a membership plan yet!", ""),
+            0: ("Press 0 to go back to the memberships menu", view_memberships_menu)
+        }
+        display_menu("Your Current Membership Plan", no_plan)
+
 
 
 def view_guest_trial():
