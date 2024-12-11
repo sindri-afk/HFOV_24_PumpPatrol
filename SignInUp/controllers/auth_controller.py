@@ -9,12 +9,20 @@ class AuthController:
     def sign_up(self):
         username = input("Enter username: ")
         password = input("Enter password: ")
-        trainer_or_member = input("Are you a trainer? (y/n): ").lower()
+
+        while True:
+            trainer_or_member = input("Are you a trainer? (y/n): ").lower()
+            if trainer_or_member in ['y', 'n']:
+                break
+            else:
+             print("Invalid input. Please enter 'y' for yes or 'n' for no.")
+
         try:
             user = self.auth_service.sign_up(username, password, trainer_or_member)
             print(f"User {user.username} created successfully!")
         except ValueError as e:
             print(e)
+
 
     def sign_in(self):
         username = input("Enter username: ")
