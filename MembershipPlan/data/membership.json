@@ -40,5 +40,12 @@
         "price": "Free",
         "duration": "1 week",
         "username": "benjamin"
+    },
+    {
+        "plan_name": "Class Plan",
+        "type_name": "Short-Term",
+        "price": "12.0",
+        "duration": "1 month",
+        "username": "sindri"
     }
 ]

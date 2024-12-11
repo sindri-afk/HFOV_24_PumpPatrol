@@ -61,5 +61,12 @@
         "password_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
         "membership_id": 0,
         "trainer": "y"
+    },
+    {
+        "user_id": 10,
+        "username": "sindri",
+        "password_hash": "dbafc22b6d47cf55a3f95f5770e5ab330887a765182bcfa9196c5df54e0a3f3f",
+        "membership_id": 0,
+        "trainer": "n"
     }
 ]
