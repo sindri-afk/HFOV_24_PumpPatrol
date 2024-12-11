@@ -40,5 +40,12 @@
         "price": "Free",
         "duration": "1 week",
         "username": "benjamin"
+    },
+    {
+        "plan_name": "Full Plan",
+        "type_name": "Long-Term",
+        "price": "50.0",
+        "duration": "1 year",
+        "username": "freyr"
     }
 ]

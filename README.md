@@ -17,17 +17,34 @@
   **Member Main Menu**
   | **Options** | **Description** |
   |-------------|-----------------|
-  | **View Memberships** | View available memberships. |
-  | **Access Virtual Workout Programs**  | View available virtual workout programs. |
+  | **Memberships** | Access the membership menu |
+  | **View Virtual Workout Programs**  | View available virtual workout programs. |
+  | **Track Workout History and Progress** | Track and exercise and view your history |
+  | **View and Book Classes** | List all upcoming workouts |
   | **Exit**    | Close and exit the program. |  
   
   **Trainer Main Menu**
   | **Options** | **Description** |
   |-------------|-----------------|
-  | **View Membership** | View all of the available memberships. |
-  | **Create Class**  | Create a new workout class for members to join |
-  | **Exit**    | Close and exit the program. |   
+  | **Memberships** | Access the membership menu |
+  | **View Virtual Workout Programs**  | View available virtual workout programs. |
+  | **Track Workout History and Progress** | Track and exercise and view your history |
+  | **View and Book Classes** | List all upcoming workouts |
+  | **Create class** | Create a class |
+  | **Exit**    | Close and exit the program. | 
 
+
+## Sprint 1
+1. **As a new gym member**, I want to register only once, and have the application remember my account details, **so that** I can just sign-in and don't have to sign-up every single time I open the app.
+2. **As a gym owner**, I want users to be able to choose from flexible membership plans, **so that** I can attract more customers.
+
+
+
+## Sprint 2
+1. **As a business man**, I want the application to include virtual workouts, **so that** we stay in competition and improve the gym’s profitability.
+2. **As a trainer**, I want to be able to create classes online, **so that** my clients can sign up for them easily.
+3. **As a gym member**, I want to be able to easily access class booking and scheduling, **so that** I can manage my time efficiently.
+4. As a **fitness Influencer**, I want to track my workout history, **so that** I can stay motivated.
 
 
 *Feedback session on Wednesday 4th December with Shalini*
@@ -40,8 +57,3 @@
 1. **As an active gym member**, I want to view my workout history across different activities, **so that** I can track my fitness progress.  
 2. **As a potential gym user**, I want access to free trial sessions for various activities, **so that** I can make an informed decision before subscribing.
 
-## Sprint 2 - Upcoming user stories
-1. **As a business man**, I want the application to include virtual workouts, **so that** we stay in competition and improve the gym’s profitability.
-2. **As a trainer**, I want to be able to create classes online, **so that** my clients can sign up for them easily.
-3. **As a gym member**, I want to be able to easily access class booking and scheduling, **so that** I can manage my time efficiently.
-4. As a **fitness Influencer**, I want to track my workout history, **so that** I can stay motivated.
