@@ -17,16 +17,21 @@
   **Member Main Menu**
   | **Options** | **Description** |
   |-------------|-----------------|
-  | **View Memberships** | View available memberships. |
-  | **Access Virtual Workout Programs**  | View available virtual workout programs. |
+  | **Memberships** | Access the membership menu |
+  | **View Virtual Workout Programs**  | View available virtual workout programs. |
+  | **Track Workout History and Progress** | Track and exercise and view your history |
+  | **View and Book Classes** | List all upcoming workouts |
   | **Exit**    | Close and exit the program. |  
   
   **Trainer Main Menu**
   | **Options** | **Description** |
   |-------------|-----------------|
-  | **View Membership** | View all of the available memberships. |
-  | **Create Class**  | Create a new workout class for members to join |
-  | **Exit**    | Close and exit the program. |   
+  | **Memberships** | Access the membership menu |
+  | **View Virtual Workout Programs**  | View available virtual workout programs. |
+  | **Track Workout History and Progress** | Track and exercise and view your history |
+  | **View and Book Classes** | List all upcoming workouts |
+  | **Create class** | Create a class |
+  | **Exit**    | Close and exit the program. | 
 
 
 
