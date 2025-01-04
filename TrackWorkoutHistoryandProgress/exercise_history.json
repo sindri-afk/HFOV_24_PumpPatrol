@@ -89,5 +89,12 @@
         "intensity": "high",
         "timestamp": "2024-12-09T23:01:10.206744",
         "username": "lara"
+    },
+    {
+        "exercise": "Bekkurinn",
+        "duration": "15",
+        "intensity": "high",
+        "timestamp": "2024-12-12T14:40:26.302948",
+        "username": "sindri"
     }
 ]
